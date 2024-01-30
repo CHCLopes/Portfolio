@@ -162,6 +162,8 @@ footer p {
   .menu {
     display: flex;
     flex-direction: column;
+    margin: 2px;
+    padding: 2px;
   }
 
   nav a {
