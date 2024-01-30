@@ -173,20 +173,12 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-  nav {
-     margin-bottom: 1rem;
-  }
-
   .menu {
     display: flex;
     flex-direction: column;
   }
 
-  hr {
-    margin-top: 2rem;
-  }
-
-  nav a {
+ nav a {
     font-size: small;
   }
 
@@ -206,12 +198,11 @@ footer {
   }
 
   #apresentacao h1 {
-    font-size: 5rem;
-    margin-bottom:6rem ;
+    font-size: x-large;
   }
 
   #apresentacao p {
-    font-size: medium;
+    font-size: large;
   }
 
   footer p {

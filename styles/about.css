@@ -158,10 +158,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-      margin-bottom: 1rem;
-  }
-
   .menu {
     display: flex;
     flex-direction: column;
@@ -173,10 +169,6 @@ footer p {
 
   img {
     width: 44vw;
-  }
-
-  hr {
-    margin-top: 1rem;
   }
 
   #sobre-mim {
@@ -202,7 +194,6 @@ footer p {
     justify-content: center;
     text-align: center;
     width: 92vw;
-    gap: 1rem;
     margin-left: 1rem;
   }
 
