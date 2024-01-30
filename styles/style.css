@@ -173,13 +173,14 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-  main {
-    width: 98vw;
-  }
-
   nav {
     flex-direction: column;
     margin-bottom: 1rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
   }
 
   hr {

@@ -163,6 +163,11 @@ footer p {
     margin-bottom: 1rem;
   }
 
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
   nav a {
     font-size: small;
   }
