@@ -148,7 +148,8 @@ footer {
   position: sticky;
   bottom: 0.1px;
   width: 96vw;
-  background-color: var(--cor-1);
+  background-color: var(--cor-2);
+  color: var(--cor-1);
   margin-top: 8vh;
 }
 
