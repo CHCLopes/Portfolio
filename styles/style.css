@@ -15,7 +15,7 @@ html {
   font-size: 1vw;
 }
 
-*{
+* {
   margin: 0.5rem;
 }
 
@@ -45,24 +45,24 @@ strong {
   padding: 0px;
 }
 
-h1{
+h1 {
   font-size: 2.4vw;
   text-align: center;
 }
 
-p{
+p {
   font-size: 1.2vw;
   font-family: var(--fonte-2);
   text-align: center;
 }
 
-img{
+img {
   box-sizing: border-box;
   width: 28vw;
   border-radius: 2vh;
 }
 
-h2{
+h2 {
   font-size: 1.6vw;
 }
 
@@ -75,13 +75,13 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   box-sizing: border-box;
   background-color: var(--cor-1);
   height: 100vh;
 }
 
-header{
+header {
   position: sticky;
   top: 0.1px;
   background-color: var(--cor-1);
@@ -93,22 +93,22 @@ nav {
   box-sizing: content-box;
   display: flex;
   align-items: center;
-  justify-content:space-around;
-  height: fit-content;
+  justify-content: space-around;
   width: 96vw;
   gap: 1rem;
 }
 
-main{
+main {
   box-sizing: border-box;
   width: 96vw;
+
 }
 
-#apresentacao{
+#apresentacao {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items:center ;
+  align-items: center;
   justify-content: space-evenly;
   text-align: justify;
   gap: 0.25rem;
@@ -169,4 +169,74 @@ footer {
   align-items: center;
   justify-content: center;
   width: 60vw;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    width: 98vw;
+  }
+
+  nav {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+  nav a {
+    font-size: small;
+  }
+
+  img {
+    width: 60vw;
+  }
+
+  #apresentacao {
+    flex-direction: column-reverse;
+    width: 98vw;
+  }
+
+  #texto-principal {
+    width: 100%;
+    gap: 1rem;
+
+  }
+
+  #apresentacao h1 {
+    font-size: 5rem;
+    margin-bottom:6rem ;
+  }
+
+  #apresentacao p {
+    font-size: medium;
+  }
+
+  footer p {
+    font-size: large;
+  }
+
+  #contato {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #contato h1 {
+    font-size: x-large;
+    margin-bottom: 1rem;
+  }
+
+  #contato a {
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #redes-sociais {
+    flex-direction: column;
+    width: 98vw;
+    gap: 2rem;
+  }
 }

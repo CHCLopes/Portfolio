@@ -16,7 +16,7 @@
 html {
   font-family: var(--fonte-1);
   color: var(--cor-2);
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 a {
@@ -88,7 +88,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content:space-around;
-  height: fit-content;
   width: 96vw;
   gap: 1rem;
 }
@@ -100,6 +99,11 @@ main{
   justify-items: center;
   box-sizing: border-box;
   width: 96vw;
+}
+
+#sobre-mim{
+  display: flex;
+  align-items:flex-start;
 }
 
 #texto-principal {
@@ -151,4 +155,67 @@ footer {
 footer p {
   text-align: center;
   font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  nav a {
+    font-size: small;
+  }
+
+  img {
+    width: 44vw;
+  }
+
+  hr {
+    margin-top: 1rem;
+  }
+
+  #sobre-mim {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    padding: 0;
+  }
+  
+  #texto-principal {
+    width: 98%;
+  }
+
+  ul, li {
+    padding: 0;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 92vw;
+    gap: 1rem;
+    margin-left: 1rem;
+  }
+
+  main h1 {
+    font-size: x-large;
+  }
+  main li {
+    font-size: large;
+  }
+
+  #formacao {
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: large;
+  }
+
 }
