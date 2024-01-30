@@ -78,7 +78,6 @@ body {
   align-items: center;
   box-sizing: border-box;
   background-color: var(--cor-1);
-  height: 100vh;
 }
 
 header {
@@ -101,7 +100,6 @@ nav {
 main {
   box-sizing: border-box;
   width: 96vw;
-
 }
 
 #apresentacao {
@@ -131,13 +129,6 @@ main {
   justify-content: center;
   gap: 0.5rem;
   margin-top: 8vh;
-}
-
-#redes-sociais {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
 }
 
 .link {
