@@ -4,16 +4,16 @@
 
 ### FORMAÇÃO ALURA: "A partir do zero: HTML e CSS para projetos web"
 
-![portfolio](./images/alohaturismo.png)
+![portfolio](./assets/Portfolio.zip)
 
-Criando uma landing page simples usando apenas HTML5 e CSS3 para treino de FlexBox.
-Utilizadas técnicas de design e de responsividade. Baseado no  ["FlexProjeto"](https://gitlab.com/karensantos/project-flexbox-dio/-/tree/master/flex-projeto) da instrutora Karen Santos no curso ["Posicionando elementos com Flexbox em CSS"](https://web.dio.me/course/posicionando-elementos-com-flexbox-em-css/learning/f57d916b-8140-4f98-ac1a-a86f1e6088ca?back=/track/philips-fullstack-developer&tab=undefined&moduleId=undefined) da DIO.
+Portfólio pessoal responsivo usando HTML5 e CSS3.
+Utilizadas técnicas de design e de responsividade. Baseado na Formação  ["A partir do zero: HTML e CSS para projetos web"](https://cursos.alura.com.br/formacao-html-css) da Alura, sendo refatorado para uso e gosto pessoal.
 
 Sites ferramentas:
-- [icon archive](https://iconarchive.com/) "favicon"
-- [google fonts](fonts.google.com) "fontes online"
-- [netlify](netlify.com) "hospedagem gratuita do site"
-- [dio](web.dio.me) "aprendizado"
-- [google](google.com) "pesquisa"
+- [Flat Icon](https://www.flaticon.com/br/) "favicon" e imagens
+- [Google fonts](fonts.google.com) "fontes online"
+- [Netlify](netlify.com) "hospedagem gratuita do site"
+- [Alura](https://cursos.alura.com.br/) "aprendizado"
+- [Google](google.com) "pesquisa"
 
-Site Hospedado: [Aloha Turismo](https://alohaturismo.netlify.app/)
+Site Hospedado: [Portfolio Carlos Lopes](https://portfoliocarloslopes.netlify.app/)
