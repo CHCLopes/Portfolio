@@ -174,8 +174,7 @@ footer {
 @media screen and (max-width: 768px) {
 
   nav {
-    flex-direction: column;
-    margin-bottom: 1rem;
+     margin-bottom: 1rem;
   }
 
   .menu {
