@@ -9,14 +9,40 @@
   --fonte-2: 'Montserrat', sans-serif;
 }
 
-*{
-  margin: 0.5rem;
-}
-
 html {
   font-family: var(--fonte-1);
   color: var(--cor-2);
   font-size: 1rem;
+}
+
+* {
+  margin: 0.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--cor-1);
+}
+
+header {
+  position: sticky;
+  top: 0.1px;
+  background-color: var(--cor-1);
+  box-sizing: border-box;
+  gap: 2rem;;
+}
+
+nav {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 96vw;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 a {
@@ -66,34 +92,7 @@ img{
   width: 16vw;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  background-color: var(--cor-1);
-  padding: 0;
-  margin: 0;
-}
 
-header {
-  position: sticky;
-  top: 0.01px;
-  background-color: var(--cor-1);
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-nav {
-  box-sizing: content-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 96vw;
-  padding: 0;
-}
 
 main{
   display: flex;
