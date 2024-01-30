@@ -4,7 +4,7 @@
 
 ### FORMAÇÃO ALURA: "A partir do zero: HTML e CSS para projetos web"
 
-![portfolio](./assets/Portfolio.zip)
+![portfolio](./assets/Portfolio.png)
 
 Portfólio pessoal responsivo usando HTML5 e CSS3.
 Utilizadas técnicas de design e de responsividade. Baseado na Formação  ["A partir do zero: HTML e CSS para projetos web"](https://cursos.alura.com.br/formacao-html-css) da Alura, sendo refatorado para uso e gosto pessoal.
