@@ -24,9 +24,9 @@ a {
   text-decoration: none;
   font-size: 1rem;
   color: var(--cor-2);
-  border: var(--cor-3) 0.8px solid;
+  border: var(--cor-3) 0.05rem solid;
   border-radius: 0.8vw;
-  padding: 1.2vh;
+  padding: 0.8vw;
 }
 
 a:hover {
@@ -79,10 +79,11 @@ body {
 
 header {
   position: sticky;
-  top: 0.1px;
+  top: 0.01px;
   background-color: var(--cor-1);
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
 }
 
 nav {
