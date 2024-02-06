@@ -237,4 +237,8 @@ footer p {
     width: 98vw;
     gap: 0.5rem;
   }
+
+  .icone{
+    width: 3vw;
+  }
 }
