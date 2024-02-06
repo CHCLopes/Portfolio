@@ -235,10 +235,10 @@ footer p {
   #redes-sociais {
     flex-direction: column;
     width: 98vw;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .icone{
-    width: 3vw;
+    width: 6vw;
   }
 }
