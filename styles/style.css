@@ -192,6 +192,8 @@ footer p {
 
   footer p {
     font-size: large;
+    position:sticky;
+    bottom: 0;
   }
 
   #contato {
