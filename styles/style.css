@@ -29,6 +29,7 @@ header {
   box-sizing: border-box;
   gap: 1rem;
   width: 96vw;
+  margin-top: 1rem;
 }
 
 nav {
@@ -60,6 +61,7 @@ a:hover {
 }
 
 hr {
+  margin-top: 1rem;
   border-color: var(--cor-3);
 }
 
