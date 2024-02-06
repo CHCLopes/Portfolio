@@ -139,7 +139,7 @@ h2 {
 footer {
   width: 96vw;
   background-color: var(--cor-1);
-  position: absolute;
+  position: sticky;
   bottom: 0;
 }
 
@@ -192,7 +192,7 @@ footer p {
 
   footer p {
     font-size: large;
-    position:relative;
+    position:sticky;
     bottom: 0;
   }
 
