@@ -168,10 +168,12 @@ footer p {
   .menu {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
   }
 
  nav a {
     font-size: small;
+    border-radius: 2vw;
   }
 
   img {
