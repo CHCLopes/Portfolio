@@ -156,6 +156,7 @@ footer p {
   align-items: center;
   justify-content: center;
   width: 60vw;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -222,6 +223,7 @@ footer p {
     justify-content: center;
     border-radius: 3vw;
     margin-bottom: 2rem;
+    width: 96vw;
   }
 
   #redes-sociais {
