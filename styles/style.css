@@ -158,6 +158,11 @@ footer p {
 
 @media screen and (max-width: 1024px) {
 
+  header {
+    position: sticky;
+    top: 0;
+  }
+
   .menu {
     display: flex;
     flex-direction: column;
