@@ -155,7 +155,15 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60vw;
+  margin-bottom: 2rem;
+}
+
+#redes-sociais a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 16vw;
 }
 
 @media screen and (max-width: 1024px) {
@@ -189,7 +197,6 @@ footer p {
   #texto-principal {
     width: 100%;
     gap: 1rem;
-
   }
 
   #apresentacao h1 {
@@ -228,6 +235,6 @@ footer p {
   #redes-sociais {
     flex-direction: column;
     width: 98vw;
-    gap: 2rem;
+    gap: 0.5rem;
   }
 }
