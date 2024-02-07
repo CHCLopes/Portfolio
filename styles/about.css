@@ -153,18 +153,26 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+
+  header {
+    position: sticky;
+    top: 0;
+    margin-top: 1rem;
+  }
+
   .menu {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
   }
 
   nav a {
     font-size: small;
+    border-radius: 2vw;
   }
 
   img {
-    width: 44vw;
+    width: 60vw;
   }
 
   #sobre-mim {
@@ -196,7 +204,7 @@ footer p {
   main h1 {
     font-size: x-large;
   }
-  
+
   main li {
     font-size: large;
   }
