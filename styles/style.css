@@ -248,4 +248,8 @@ footer p {
     width: 6vw;
     height: 6vw;
   }
+
+  h2{
+    font-size: large;
+  }
 }
