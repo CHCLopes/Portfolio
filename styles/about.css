@@ -211,6 +211,7 @@ footer p {
     align-items: center;
     justify-content: center;
     width: 96%;
+    text-align: center;
   }
 
   .icone{
