@@ -233,11 +233,8 @@ footer p {
   }
 
   #contato a {
-    font-size: large;
     align-items: center;
     justify-content: center;
-    border-radius: 3vw;
-    margin-bottom: 2rem;
     width: 96vw;
   }
 
