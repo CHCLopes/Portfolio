@@ -25,11 +25,13 @@ body {
 }
 
 header {
+  position:sticky;
+  top: 0;
   background-color: var(--cor-1);
   box-sizing: border-box;
   gap: 1rem;
   width: 96vw;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 nav {
@@ -61,8 +63,16 @@ a:hover {
 }
 
 hr {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   border-color: var(--cor-3);
+}
+
+main{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 96vw;
 }
 
 strong {
@@ -80,31 +90,15 @@ li{
   text-align: justify;
 }
 
-p{
-  font-size: 1vw;
-  font-family: var(--fonte-2);
-  text-align: justify;
-}
-
 img{
   box-sizing: border-box;
   width: 16vw;
 }
 
-
-
-main{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  justify-items: center;
-  box-sizing: border-box;
-  width: 96vw;
-}
-
 #sobre-mim{
   display: flex;
   align-items:flex-start;
+  gap: 1rem;
 }
 
 #texto-principal {
