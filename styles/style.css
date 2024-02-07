@@ -139,9 +139,9 @@ h2 {
 
 .icone {
   box-sizing: border-box;
-  width: 1.6vw;
-  height: 1.6vw;
-  margin: 0.8px;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
 }
 
 footer {
