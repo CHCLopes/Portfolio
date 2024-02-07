@@ -156,8 +156,7 @@ footer p {
   .menu {
     display: flex;
     flex-direction: column;
-    margin: 2px;
-    padding: 2px;
+    gap: 0.5rem;
   }
 
   nav a {
@@ -197,6 +196,7 @@ footer p {
   main h1 {
     font-size: x-large;
   }
+  
   main li {
     font-size: large;
   }
