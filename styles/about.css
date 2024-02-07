@@ -127,16 +127,9 @@ img{
   width: 100%;
 }
 
-.escola {
-  box-sizing: border-box;
-  width: 4vw;
-}
-
-.icone {
-  box-sizing: border-box;
-  width: 1.6vw;
-  height: 1.6vw;
-  margin: 0.8px;
+.icone{
+  width: 2rem;
+  height: 2rem;
 }
 
 footer {
@@ -212,6 +205,17 @@ footer p {
   #formacao {
     align-items: center;
     justify-content: center;
+  }
+
+  #formacao a {
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+  }
+
+  .icone{
+    width: 2rem;
+    height: 2rem;
   }
 
   footer p {
