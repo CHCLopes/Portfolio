@@ -210,12 +210,13 @@ footer p {
   #formacao a {
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 96%;
   }
 
   .icone{
     width: 2rem;
     height: 2rem;
+    margin: 0.5rem;
   }
 
   footer p {
