@@ -92,7 +92,7 @@ img {
 }
 
 h2 {
-  font-size: 1.6vw;
+  font-size: 1.5rem;
 }
 
 #apresentacao {
@@ -156,12 +156,16 @@ footer p {
   font-size: 1vw;
 }
 
+#redes {
+  margin-bottom: 1rem;
+}
+
 #redes-sociais {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #redes-sociais a{
@@ -249,7 +253,7 @@ footer p {
     height: 6vw;
   }
 
-  h2{
+  #contato h2{
     font-size: large;
   }
 }
