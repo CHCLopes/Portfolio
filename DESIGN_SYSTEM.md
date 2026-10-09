@@ -42,7 +42,7 @@ Espaçamento entre palavras e letras foi ajustado visualmente no desktop e no ce
 
 Contêiner de até 1200 px; margens de 56 px no desktop, 32 px no tablet, 24 ou 18 px no celular. Seções alternam fundo da página e lavagem verde/petróleo. Divisores finos organizam a leitura. Capturas e retrato mantêm suas cores originais.
 
-O JBL Desk é o destaque corporativo. Três capítulos apresentam contexto, componentes e filtros; a captura fica fixa na área disponível durante a leitura e a nota acompanha o capítulo ativo. No celular, a captura e os capítulos formam uma sequência normal. O Endereçador abre os outros projetos em uma composição horizontal; os dois seguintes compartilham a linha no desktop. Publicações aparecem como linhas editoriais.
+O JBL Desk abre o carrossel como destaque corporativo. Seu modal apresenta contexto, componentes e filtros em três capítulos; a captura permanece no painel da direita durante a leitura. No celular, a captura e os capítulos formam uma sequência em uma coluna. Os demais projetos compartilham o carrossel horizontal e a mesma estrutura de modal. Publicações aparecem como linhas editoriais.
 
 ## Movimento e estados
 
@@ -54,7 +54,7 @@ O JBL Desk é o destaque corporativo. Três capítulos apresentam contexto, comp
 - Foco: contorno verde de 3 px, afastado 5 px.
 - Menu móvel: nome acessível, estado expandido, Escape e retorno de foco.
 - Tema: claro por padrão, inclusive se o sistema usar tema escuro. Uma escolha explícita pelo botão é lembrada localmente e sincronizada entre abas. A inicialização em `index.html` e o componente React aplicam a mesma regra.
-- Cases públicos: `details/summary` nativo, sem modal.
+- Projetos: `dialog` nativo; decisões e evidências em `details/summary`, aberto inicialmente no modal.
 - Cópia de e-mail: retorno de sucesso/falha em `role="status"`.
 
 Navegação colapsa abaixo de 1000 px; conteúdo principal empilha abaixo de 800 px, com ajuste adicional em 390 px.
@@ -101,7 +101,7 @@ A seção “Projetos e Trabalhos” usa carrossel horizontal como apresentaçã
 
 Após a comparação, o usuário aprovou manter somente o carrossel. O seletor de apresentação foi retirado. No ambiente local, as versões anteriores permanecem recuperáveis em `outputs/backup-antes-carrossel-projetos.zip` e `outputs/backup-antes-refinamentos-carrossel.zip`; esses backups não são enviados ao GitHub. Os componentes de conteúdo continuam sendo usados nos modais.
 
-“Saiba mais” abre um `dialog` nativo com o conteúdo dos próprios componentes `FeaturedProject` e `Projects`. Tipografia, metadados, capítulos, links e decisões conservam o design da apresentação anterior. O modal adapta as margens ao espaço disponível, arredonda as molduras e abre “Decisões e evidências”. No JBL Desk, a navegação dos capítulos rola dentro do modal, sem alterar a âncora da página. O fundo esmaece em petróleo com desfoque suave. A página fica inerte e sua rolagem é bloqueada; fechar pelo botão, Escape ou fundo externo restaura o foco ao acionador.
+“Saiba mais” abre um `dialog` nativo com o conteúdo compartilhado de `FeaturedProject` e `ProjectDetails`. No desktop, o cabeçalho verde (`--wash`), com título em `--green`, descrição e tecnologias, permanece fixo acima das duas colunas off-white (`--paper`). A coluna esquerda tem rolagem própria e contém os capítulos, links e decisões, sem transbordar para a galeria. A coluna direita tem galeria vertical independente, com setas centralizadas acima e abaixo da imagem, cantos arredondados, sombra discreta e cores dos controles do carrossel principal. O modal mede até 1200 px de largura e 820 px de altura, limitado ao espaço da tela. No tema escuro, todas as superfícies seguem os tokens petróleo e verde do site. Abaixo de 800 px, a galeria precede o texto em uma coluna com rolagem compartilhada; o cabeçalho e o botão de fechar permanecem visíveis. “Decisões e evidências” abre expandido. No JBL Desk, a navegação dos capítulos rola dentro do painel correspondente, sem alterar a âncora da página. O fundo esmaece em petróleo com desfoque suave. A página fica inerte e sua rolagem é bloqueada; fechar pelo botão, Escape ou fundo externo restaura o foco ao acionador.
 
 As galerias dos projetos Endereçador, Michely Massoterapia, Sk8-Genius e Bikcraft possuem três imagens cada, obtidas dos respectivos repositórios públicos. Fontes e hashes estão em `public/projects/gallery/sources.json`. A navegação vertical tem setas, contador e suporte a teclado, com imagens inteiras e acesso ao arquivo em tamanho completo. O JBL Desk conserva uma única captura e a indicação de base fictícia. O movimento reduzido desativa a rolagem animada.
 

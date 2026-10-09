@@ -8,20 +8,35 @@ const chapters = [
   { id: 'jbl-filters', number: '03', label: 'Interação', title: 'Escolher o recorte. Confirmar a análise.', text: 'Filtros por período, área, convênio e gestor. A seleção temporária é separada da aplicada; o contexto do dashboard muda após a confirmação.', detail: 'Foi meu primeiro trabalho gerindo agentes de IA na construção, com Gemini. Os agentes apoiaram a construção do front-end; conduzi o storytelling e revisei as decisões de interface.' },
 ] as const;
 
-export function FeaturedProject({ gallery, inModal = false }: { gallery?: ReactNode; inModal?: boolean }) {
+export function FeaturedProject({ gallery, inModal = false, textOnly = false }: { gallery?: ReactNode; inModal?: boolean; textOnly?: boolean }) {
   const [active, setActive] = useState(0);
   const chapterRefs = useRef<(HTMLElement | null)[]>([]);
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-      if (visible[0]) {
-        const index = chapterRefs.current.indexOf(visible[0].target as HTMLElement);
-        if (index >= 0) setActive(index);
-      }
-    }, { root: inModal ? chapterRefs.current[0]?.closest('dialog') : null, rootMargin: '-18% 0px -45% 0px', threshold: 0 });
-    chapterRefs.current.forEach(element => { if (element) observer.observe(element); });
-    return () => observer.disconnect();
-  }, [inModal]);
+    const mobile = window.matchMedia('(max-width: 799px)');
+    let observer: IntersectionObserver;
+    function observeChapters() {
+      observer?.disconnect();
+      const root = inModal ? chapterRefs.current[0]?.closest(textOnly ? (mobile.matches ? '.modal-body' : '.modal-text') : 'dialog') : null;
+      observer = new IntersectionObserver(entries => {
+        const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible[0]) {
+          const index = chapterRefs.current.indexOf(visible[0].target as HTMLElement);
+          if (index >= 0) setActive(index);
+        }
+      }, { root, rootMargin: '-18% 0px -45% 0px', threshold: 0 });
+      chapterRefs.current.forEach(element => { if (element) observer.observe(element); });
+    }
+    observeChapters();
+    mobile.addEventListener('change', observeChapters);
+    return () => { observer.disconnect(); mobile.removeEventListener('change', observeChapters); };
+  }, [inModal, textOnly]);
+  if (textOnly) return <>
+    <nav className="chapter-nav" aria-label="Etapas do case JBL Desk">{chapters.map((chapter, index) => <a href={'#' + chapter.id} key={chapter.id} aria-current={active === index ? 'step' : undefined} onClick={event => { event.preventDefault(); chapterRefs.current[index]?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' }); }}>{chapter.number} {chapter.label}</a>)}</nav>
+    <div className="case-chapters">{chapters.map((chapter, index) => <article id={chapter.id} ref={element => { chapterRefs.current[index] = element; }} className={'case-chapter' + (active === index ? ' is-current' : '')} key={chapter.id} aria-labelledby={chapter.id + '-heading'}>
+      <p className="eyebrow"><span>{chapter.number}</span> / {chapter.label}</p><h3 id={chapter.id + '-heading'}>{chapter.title}</h3><p>{chapter.text}</p><p className="chapter-detail">{chapter.detail}</p>
+    </article>)}</div>
+    <div className="case-evidence"><p><strong>Front-end e storytelling</strong>A organização dos indicadores, as decisões de interação e os componentes estão registrados na documentação técnica do projeto.</p></div>
+  </>;
   return <section id={inModal ? undefined : 'jbl-desk'} className="section featured-section" aria-labelledby="jbl-heading">
     <div className="shell">
       <div className="feature-heading"><div><p className="eyebrow">Trabalho selecionado / Projeto corporativo</p><h2 id="jbl-heading">JBL Desk<span className="accent-period">.</span></h2></div><p>Uma interface para acompanhar<br />o desempenho comercial.</p></div>
