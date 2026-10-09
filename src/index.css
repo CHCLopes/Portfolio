@@ -204,6 +204,7 @@ h2 span{color:var(--green)}
 .footer-inner a{display:flex;align-items:center;gap:8px;min-height:36px}
 /* Hero signature: the artwork and orbit belong exclusively to this section. */
 .hero{position:relative;isolation:isolate;overflow:clip}
+.hero-title-orbit{display:contents}
 .hero-signature{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) clamp(230px,28vw,360px);gap:24px;align-items:center;min-height:0;padding-block:12px}
 .hero-context{margin-top:48px}
 .hero .hero-signature h1{position:relative;z-index:1;min-width:0;font-size:calc(clamp(64px,9.8vw,142px) + 1px)}
@@ -237,6 +238,29 @@ h2 span{color:var(--green)}
  .contact-layout{grid-template-columns:1fr;gap:45px}.contact-section{padding-block:64px}.contact-section h2{font-size:65px}.contact-links{max-width:520px;width:100%}.email-row>a{font-size:24px}.footer-inner{flex-wrap:wrap;gap:6px 18px}
 }
 @media(max-width:390px){.shell{width:calc(100% - 36px)}.brand{gap:9px;font-size:15px}.brand-caption{font-size:10px}.brand-mark{font-size:30px}.nav-inner{gap:10px}.theme-toggle{padding-inline:10px}.theme-toggle>span{display:none}.hero h1{font-size:calc(clamp(46px,13.6vw,54px) + 1px)}.hero-topline>span{font-size:11px}.eyebrow{font-size:11px}.hero-line-strong{margin-left:7%}.feature-heading h2{font-size:59px}.case-map{padding:15px}.chapter-nav{gap:11px}.case-chapter h3{font-size:28px}.about-intro h2{font-size:33px}.contact-section h2{font-size:57px}.email-row>a{font-size:20px}}
+/* Mobile refinements: keep the desktop composition and orbit unchanged. */
+@media(max-width:799px){
+ .hero-signature{grid-template-columns:1fr;gap:24px;min-height:0;padding-block:12px 20px}
+ .hero-title-orbit{display:block;position:relative;isolation:isolate;min-width:0;padding-block:16px}
+ .hero .hero-signature h1{text-align:center}
+ .hero-signature .hero-line-strong{margin-left:0}
+ .hero-title-orbit .hero-orbit{width:min(108%,560px);top:50%}
+ .hero-emblem{width:160px;border-radius:20px;justify-self:center;margin-right:0}
+ .hero-specialty{grid-template-columns:repeat(2,max-content);column-gap:0;justify-content:space-evenly;margin-inline:auto}
+ .hero-description{text-align:justify;text-align-last:start}
+ .about-intro h2{text-align:center}
+ .about-intro .about-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:center;justify-items:center}
+ .about-intro .about-links .text-link{width:100%;justify-content:center;text-align:center;gap:8px}
+ .about-intro .about-links svg{flex-shrink:0}
+ .profile-figure{margin-inline:auto;text-align:center}
+ .trajectory-section .section-heading,.writing-section .section-heading{align-items:center;text-align:center}
+ .trajectory-section .section-heading>div,.writing-section .section-heading>div{width:100%}
+ .education-note{margin-inline:auto}
+ .publication-hint{justify-content:center}
+ .publication{column-gap:15px}
+ .footer-inner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px}
+ .footer-inner>a{justify-self:end}
+}
 @media(prefers-reduced-motion:no-preference){
  .hero-line{animation:arrive 850ms var(--ease-out) both}.hero-line-strong{animation-delay:110ms}
  @keyframes arrive{from{transform:translateY(14px)}to{transform:translateY(0)}}

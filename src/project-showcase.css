@@ -109,7 +109,8 @@
  .project-carousel{gap:16px}.showcase-card{flex-basis:86%;padding:20px;border-radius:24px}
  .showcase-card-copy h3{font-size:28px}.showcase-card-copy>p:last-of-type{min-height:0}
  .showcase-card-top{font-size:10px;margin-bottom:17px}
- .showcase-footer{flex-wrap:wrap;gap:8px 20px;margin-top:12px}.carousel-progress{display:none}
+ .showcase-footer{flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-top:12px}.carousel-progress{display:none}
+ .showcase-footer>.button{margin-inline:auto}
  .project-modal{width:calc(100% - 24px);height:calc(100dvh - 24px);max-height:calc(100dvh - 24px);border-radius:22px}
  .modal-header{padding:10px 20px 14px}.modal-toolbar{gap:12px}.modal-toolbar .eyebrow{font-size:10px;letter-spacing:.08em}
  .modal-heading{grid-template-columns:1fr;gap:8px;margin-block:4px 12px}.modal-heading h2{font-size:32px}.modal-heading>p{font-size:13px;max-width:none;line-height:1.5}

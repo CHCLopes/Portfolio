@@ -140,3 +140,11 @@ O modal “Sobre este site” reutiliza a estrutura visual dos projetos: cabeça
 O relato descreve Carlos como PO / Scrum Master e Codex como a frente de desenvolvimento assistido por IA. As sprints organizam as etapas realizadas, sem atribuir duração, cerimônias ou métricas não registradas. As decisões de produto e a aceitação final permanecem com Carlos. O conteúdo identifica o refinamento em andamento e a revisão em prévia antes da publicação.
 
 O `dialog` nativo bloqueia a interação e a rolagem da página ao fundo, permite fechamento pelo botão, Escape e clique externo e restaura o foco ao acionador. Verificação local realizada nos dois temas, no desktop, em 1024 × 600, 390 × 844 e 320 × 640: sem transbordamento horizontal, com leitura até o final, cabeçalho estável e retorno de foco. Build e lint passaram; o modal do JBL Desk manteve suas duas colunas e galeria.
+
+## Alinhamento mobile — 09/10/2026
+
+Até 799 px, o Hero usa título e ilustração centralizados em uma coluna. Um contêiner envolve somente o título e os dois cometas, limitando a órbita à frase, acima da imagem. As competências ficam em duas colunas com largura pelo conteúdo e três espaços horizontais iguais. A descrição do Hero usa alinhamento justificado, com a última linha alinhada ao início. No desktop, o novo contêiner usa `display: contents` e conserva a órbita e a composição anteriores.
+
+No Sobre mim, título, retrato e legenda ficam centralizados; os dois links ocupam colunas iguais com intervalo de 16 px e permitem quebra do texto em telas estreitas. O CTA “Mais no GitHub” fica centralizado. Os títulos e textos introdutórios da Trajetória e das Publicações também são centralizados, incluindo a formação e a instrução de leitura. Nas publicações, o intervalo horizontal da grade passa de 13 para 15 px, aumentando em 2 px a separação entre miniatura e texto. No rodapé, copyright e retorno ao início ocupam a primeira linha, e o botão sobre o site fica centralizado na segunda.
+
+Alinhamentos e ausência de transbordamento horizontal conferidos em 320, 360, 390, 412, 430 e 768 px. A largura de 412 px é uma referência de composição para celular, sem representar um teste de desempenho no hardware do Moto G84. Na comparação em 1280 × 720, as medidas, posições e estilos dos elementos desktop inspecionados permaneceram iguais.

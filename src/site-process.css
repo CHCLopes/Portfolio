@@ -34,7 +34,7 @@
 .process-release p{margin:12px 0}
 .process-release .text-link{font-size:13px;align-items:center;gap:8px}
 @media(max-width:799px){
- .footer-process-button{order:3;margin-top:8px}
+ .footer-process-button{order:3;margin-top:8px;grid-column:1/-1;justify-self:center}
  .site-process-modal .modal-heading h2{font-size:30px}
  .site-process-modal .modal-meta{flex-wrap:wrap}
  .site-process-modal .modal-toolbar .eyebrow{max-width:23ch}

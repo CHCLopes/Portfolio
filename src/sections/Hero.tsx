@@ -19,8 +19,10 @@ export function Hero() {
     <div className="shell hero-editorial">
       <div className="hero-topline"><p className="eyebrow">Carlos Henrique Lopes</p><span className="hero-location"><MapPin size={13} aria-hidden="true" />Recife, PE · Brasil</span></div>
       <div className="hero-signature">
-        <HeroComet />
-        <h1 id="hero-heading"><span className="hero-line thin-display">Da operação</span><span className="hero-line hero-line-strong">à interface<span className="hero-period">.</span></span></h1>
+        <div className="hero-title-orbit">
+          <HeroComet />
+          <h1 id="hero-heading"><span className="hero-line thin-display">Da operação</span><span className="hero-line hero-line-strong">à interface<span className="hero-period">.</span></span></h1>
+        </div>
         <div className="hero-emblem"><img src="/hero/agent-layers.png" alt="Camadas interligadas de agentes, em azul petróleo e aqua, com conexões verdes." width="1280" height="720" fetchPriority="high" decoding="async" /></div>
       </div>
       <div className="hero-context"><ul className="hero-specialty" aria-label="Competências">{specialties.map(({ label, Icon }) => <li key={label}><Icon size={17} aria-hidden="true" /><span>{label}</span></li>)}</ul><div>
