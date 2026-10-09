@@ -6,8 +6,8 @@ export const profile = {
 } as const;
 
 export const publications = [
-  { title: 'O Brasil já adotou a IA. Mas já aprendeu a implementá-la?', category: 'IA e cultura digital', description: 'Uma reflexão a partir do OpenAI para Devs, no Recife: transformar o uso de ferramentas em capacidade, processos e resultados, preservando a autonomia das pessoas.', href: 'https://www.linkedin.com/posts/carlos-lopes-b445aa201_openaiparadevsrecife-01-ugcPost-7493448579198533632-IDEU/' },
-  { title: 'O Scrum como instrumento de transformação da cultura corporativa', category: 'Gestão ágil · Novembro de 2022', description: 'Uma análise sobre pessoas, aprendizagem e mudança de cultura, escrita durante a formação em Scrum Master.', href: 'https://pt.linkedin.com/pulse/o-scrum-como-instrumento-de-transforma%C3%A7%C3%A3o-da-cultura-carlos-lopes' },
+  { image: '/publications/ia-cultura-digital.jpg', imageWidth: 347, imageHeight: 491, title: 'O Brasil já adotou a IA. Mas já aprendeu a implementá-la?', category: 'IA e cultura digital', description: 'Uma reflexão a partir do OpenAI para Devs, no Recife: transformar o uso de ferramentas em capacidade, processos e resultados, preservando a autonomia das pessoas.', href: 'https://www.linkedin.com/posts/carlos-lopes-b445aa201_openaiparadevsrecife-01-ugcPost-7493448579198533632-IDEU/' },
+  { image: '/publications/scrum-cultura-corporativa.png', imageWidth: 915, imageHeight: 532, title: 'O Scrum como instrumento de transformação da cultura corporativa', category: 'Gestão ágil · Novembro de 2022', description: 'Uma análise sobre pessoas, aprendizagem e mudança de cultura, escrita durante a formação em Scrum Master.', href: 'https://pt.linkedin.com/pulse/o-scrum-como-instrumento-de-transforma%C3%A7%C3%A3o-da-cultura-carlos-lopes' },
 ] as const;
 
 export type PortfolioProject = {

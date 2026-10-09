@@ -114,3 +114,7 @@ A indicação “Deslize para explorar” fica entre o título da seção e os c
 ## Passagens entre seções
 
 As junções do conteúdo principal usam um degradê vertical de 32 px, da cor da seção anterior para a próxima, dentro da margem superior e sem cobrir texto. A passagem de contato para o rodapé usa 20 px. As cores vêm dos tokens dos temas, incluindo o petróleo do contato. A impressão oculta os degradês.
+
+## Publicações — 09/10/2026
+
+A instrução “Selecione uma publicação para ler no LinkedIn.” aparece logo abaixo do título, com seta externa e tipografia discreta. Cada linha inteira continua sendo um único link, com abertura em nova aba. A primeira página da publicação sobre IA e a capa “Scrum Workflow” do artigo sobre Scrum aparecem como miniaturas de 132 × 112 px no desktop, com cantos de 16 px, contorno suave e imagem inteira (`object-fit: contain`). Em telas menores, elas ocupam a margem dos números para preservar a largura do texto e a altura dos itens; no celular, medem 48 × 64 px. As superfícies seguem os tokens dos temas. Fontes e hashes das imagens estão em `public/publications/sources.json`.
