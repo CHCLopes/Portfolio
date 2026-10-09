@@ -11,9 +11,8 @@ const experience = [
 
 export function Trajectory() {
   return <section id="trajectory" className="section trajectory-section" aria-labelledby="trajectory-heading"><div className="shell">
-    <div className="section-heading"><div><p className="eyebrow">Trajetória / Experiências selecionadas</p><h2 id="trajectory-heading" className="thin-display">Gestão, dados<br />e&nbsp;desenvolvimento.</h2></div><p>Experiências que conectam liderança de equipes, processos, educação corporativa e construção de ferramentas.</p></div>
+    <div className="section-heading"><div><p className="eyebrow">Trajetória e Experiências</p><h2 id="trajectory-heading" className="thin-display">Gestão, dados<br />e&nbsp;desenvolvimento.</h2><p className="education-note">Superior em Gestão da Tecnologia da Informação · Especialização em Desenvolvimento Mobile</p></div><p>Experiências que conectam liderança de equipes, processos, educação corporativa e construção de ferramentas.</p></div>
     <div className="experience-list">{experience.map(item => <article className="experience-item" key={item.title}><span className="experience-period">{item.period}</span><div><p className="eyebrow">{item.place}</p><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div>
-    <p className="education-note">Formação em Gestão da Tecnologia da Informação · Especialização em Desenvolvimento Mobile</p>
     <div className="about-links"><a className="text-link" href="/carlos-lopes-trajetoria.pdf" download>Baixar trajetória profissional <ArrowDown size={17} aria-hidden="true" /></a><a className="text-link" href={profile.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={17} aria-hidden="true" />LinkedIn <ArrowUpRight size={17} aria-hidden="true" /></a></div>
   </div></section>;
 }
