@@ -10,7 +10,11 @@ export const projectCards: readonly ProjectCard[] = [
 ];
 
 export const projectImages: Record<string, readonly ProjectImage[]> = {
-  'jbl-desk': [{ src: '/projects/jbl-desk.jpg', alt: 'Dashboard do JBL Desk com filtros, meta global, distribuição por área e evolução anual. Os números são fictícios.', caption: 'Interface em Power Apps / Base fictícia.' }],
+  'jbl-desk': [
+    { src: '/projects/jbl-desk.jpg', alt: 'Dashboard do JBL Desk com filtros, meta global, distribuição por área e evolução anual. Os números são fictícios.', caption: '01 / Interface desktop em Power Apps · Base fictícia.' },
+    { src: '/projects/gallery/JBLDesk-TelaInicialMobile01.png', alt: 'Tela inicial Mobile 01 do JBL Desk com filtros e indicador de meta global. Os números são fictícios.', caption: '02 / Tela inicial Mobile 01 · Base fictícia.' },
+    { src: '/projects/gallery/JBLDesk-TelaInicialMobile05.png', alt: 'Tela inicial Mobile 05 do JBL Desk com distribuição por área e gráfico de desempenho anual. Os números são fictícios.', caption: '03 / Tela inicial Mobile 05 · Base fictícia.' },
+  ],
   enderecador: [
     { src: '/projects/gallery/enderecador-desktop.png', alt: 'Interface desktop do Endereçador.', caption: '01 / Interface desktop.' },
     { src: '/projects/gallery/enderecador-preview.png', alt: 'Remetente e visualização da impressão no Endereçador.', caption: '02 / Remetente e prévia de impressão.' },
