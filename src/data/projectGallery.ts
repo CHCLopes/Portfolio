@@ -15,6 +15,9 @@ export const projectImages: Record<string, readonly ProjectImage[]> = {
     { src: '/projects/gallery/JBLDesk-TelaInicialMobile01.png', alt: 'Tela inicial Mobile 01 do JBL Desk com filtros e indicador de meta global. Os números são fictícios.', caption: '02 / Tela inicial Mobile 01 · Base fictícia.' },
     { src: '/projects/gallery/JBLDesk-TelaInicialMobile05.png', alt: 'Tela inicial Mobile 05 do JBL Desk com distribuição por área e gráfico de desempenho anual. Os números são fictícios.', caption: '03 / Tela inicial Mobile 05 · Base fictícia.' },
   ],
+  'gerat-app': [
+    { src: '/publications/reconhecimento-inovacao.jpg', alt: 'Certificado dos Correios em nome de Carlos Henrique Correia Lopes, na categoria Projeto de Inovação do Prêmio Destaques do Ano 2022, entregue em 29 de novembro de 2023.', caption: 'Reconhecimento pelo GERAT APP · Prêmio de 2022, entregue em novembro de 2023. Registro do certificado.' },
+  ],
   enderecador: [
     { src: '/projects/gallery/enderecador-desktop.png', alt: 'Interface desktop do Endereçador.', caption: '01 / Interface desktop.' },
     { src: '/projects/gallery/enderecador-preview.png', alt: 'Remetente e visualização da impressão no Endereçador.', caption: '02 / Remetente e prévia de impressão.' },

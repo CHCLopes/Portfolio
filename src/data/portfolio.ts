@@ -8,7 +8,7 @@ export const profile = {
 // Publicações da mais recente para a mais antiga.
 export const publications = [
   { publishedAt: '2026-08', image: '/publications/ia-cultura-digital.jpg', imageWidth: 347, imageHeight: 491, title: 'O Brasil já adotou a IA. Mas já aprendeu a implementá-la?', category: 'IA e cultura digital · Agosto de 2026', description: 'Uma reflexão a partir do OpenAI para Devs, no Recife: transformar o uso de ferramentas em capacidade, processos e resultados, preservando a autonomia das pessoas.', href: 'https://www.linkedin.com/posts/carlos-lopes-b445aa201_openaiparadevsrecife-01-ugcPost-7493448579198533632-IDEU/' },
-  { publishedAt: '2023-11', image: '/publications/reconhecimento-inovacao.jpg', imageWidth: 800, imageHeight: 401, title: 'Reconhecimento por inovação: um passo na jornada', category: 'Trajetória e inovação · Novembro de 2023', description: 'O reconhecimento dos Correios por projeto de inovação como ponto de partida para refletir sobre crescimento, mudança e aprendizagem ao longo da trajetória.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7135630836141309952/' },
+  { publishedAt: '2023-11', image: '/publications/reconhecimento-inovacao.jpg', imageWidth: 800, imageHeight: 401, title: 'Reconhecimento por inovação: um passo na jornada', category: 'Trajetória e inovação · Novembro de 2023', description: 'Reconhecimento pela criação do GERAT APP, aplicação que concentrava e tratava dados de sistemas dispersos para apoiar a gestão das unidades dos Correios.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7135630836141309952/' },
   { publishedAt: '2023-03', image: '/publications/javascript-power-apps.jpg', imageWidth: 800, imageHeight: 420, title: 'JavaScript e Power Apps: conexões entre caminhos', category: 'Desenvolvimento e low code · Março de 2023', description: 'Do Excel e Power BI ao front-end e ao Power Apps: um relato sobre aprender novas ferramentas, reencontrar o JavaScript e conectar conhecimentos.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:7045428901572952064/' },
   { publishedAt: '2022-11', image: '/publications/scrum-cultura-corporativa.png', imageWidth: 915, imageHeight: 532, title: 'O Scrum como instrumento de transformação da cultura corporativa', category: 'Gestão ágil · Novembro de 2022', description: 'Uma análise sobre pessoas, aprendizagem e mudança de cultura, escrita durante a formação em Scrum Master.', href: 'https://pt.linkedin.com/pulse/o-scrum-como-instrumento-de-transforma%C3%A7%C3%A3o-da-cultura-carlos-lopes' },
   { publishedAt: '2022-10', image: '/publications/dashboards-excel.jpg', imageWidth: 800, imageHeight: 479, title: 'Revisitar dashboards para encontrar novos caminhos', category: 'Excel e visualização de dados · Outubro de 2022', description: 'Uma revisão da criação e do design de dashboards em Excel, retomando conhecimentos para encontrar novas possibilidades na apresentação dos dados.', href: 'https://www.linkedin.com/feed/update/urn:li:activity:6984098039250468865/' },
@@ -16,30 +16,26 @@ export const publications = [
 
 export type PortfolioProject = {
   id: string; number: string; title: string; category: string; headline: string;
-  description: string; image?: string; alt?: string; cover?: 'study' | 'harness';
-  imageCaption?: string; tech: readonly string[]; github: string; live?: string;
+  description: string; image?: string; alt?: string; cover?: 'study' | 'harness' | 'gerat';
+  imageCaption?: string; tech: readonly string[]; github?: string; live?: string;
   role: string; problem: string; decisions: readonly string[]; evidence: string; next: string;
-  repositoryLabel?: string;
+  repositoryLabel?: string; evidenceLink?: { href: string; label: string }; nextLabel?: string;
 };
 
 export const projects: readonly PortfolioProject[] = [
   {
-    id: 'enderecador',
-    number: '01',
-    title: 'Endereçador',
-    category: 'Ferramenta operacional',
-    headline: 'Da rotina de postagem a uma ferramenta digital.',
-    description: 'Consulta de CEP, preenchimento de endereços e geração de etiquetas em um só fluxo. Uma aplicação que aproxima desenvolvimento web e uma necessidade concreta da operação.',
-    image: '/projects/enderecador.jpg',
-    alt: 'Interface real do Endereçador com formulário de remetente e prévia da etiqueta e da declaração de conteúdo.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'ViaCEP'],
-    github: 'https://github.com/CHCLopes/Projeto-Enderecador',
-    live: 'https://enderecador.netlify.app/',
-    role: 'Desenvolvimento front-end e organização da interface para o fluxo de endereçamento.',
-    problem: 'Preparar etiquetas manualmente exige repetir informações e organizar documentos de postagem.',
-    decisions: ['Integrar a consulta de CEP para apoiar o preenchimento dos endereços.', 'Separar remetente e destinatário, com prévia dos documentos de impressão.', 'Reunir etiquetas em uma fila e contemplar envios nacionais e internacionais.'],
-    evidence: 'Aplicação publicada com consulta de CEP, fila de impressão e prévia de documentos. O repositório permite consultar a implementação.',
-    next: 'Medir o tempo de preparação e os erros de preenchimento em tarefas reais de postagem.',
+    id: 'gerat-app', number: '01', title: 'GERAT APP', category: 'Projeto corporativo · Inovação',
+    headline: 'Dados dispersos, informação pronta para a gestão.',
+    description: 'Aplicação local desenvolvida nos Correios para concentrar e tratar dados de diferentes sistemas. A proposta era entregar informações organizadas aos gestores das unidades, facilitando o acesso e apoiando seu desempenho e sua comunicação.',
+    cover: 'gerat', imageCaption: 'Capa editorial do GERAT APP. O certificado documenta o reconhecimento recebido pelo projeto.',
+    tech: ['Power Apps', 'Microsoft Lists', 'SharePoint', 'Power Automate', 'Access', 'Excel'],
+    role: 'Front-end e atuação como agilista em uma equipe de três pessoas, com Product Owner e desenvolvedor de back-end.',
+    problem: 'Os dados necessários à gestão estavam dispersos em muitos sistemas. Era preciso concentrá-los e tratá-los para disponibilizar a informação de forma mais acessível aos gestores das unidades locais.',
+    decisions: ['Concentrar e tratar dados provenientes de sistemas dispersos em uma aplicação local.', 'Combinar Power Apps, Microsoft Lists, SharePoint, Power Automate, Access e Excel na construção da ferramenta.', 'Organizar a apresentação das informações para apoiar o acesso, a comunicação e o trabalho dos gestores.'],
+    evidence: 'O trabalho recebeu o Prêmio Destaques do Ano 2022 dos Correios, na categoria Projeto de Inovação. O certificado foi entregue em novembro de 2023 e está disponível nesta apresentação e na publicação original.',
+    evidenceLink: { href: 'https://www.linkedin.com/feed/update/urn:li:activity:7135630836141309952/', label: 'Ver reconhecimento no LinkedIn' },
+    nextLabel: 'Evolução do MVP',
+    next: 'A solução tornou-se um MVP, que está sendo evoluído para uma aplicação oficial em outra linguagem.',
   },
   {
     id: 'massoterapia',
@@ -60,8 +56,26 @@ export const projects: readonly PortfolioProject[] = [
     next: 'Validar a jornada de agendamento com usuários e acompanhar contatos gerados pelo site.',
   },
   {
-    id: 'genius',
+    id: 'enderecador',
     number: '03',
+    title: 'Endereçador',
+    category: 'Ferramenta operacional',
+    headline: 'Da rotina de postagem a uma ferramenta digital.',
+    description: 'Consulta de CEP, preenchimento de endereços e geração de etiquetas em um só fluxo. Uma aplicação que aproxima desenvolvimento web e uma necessidade concreta da operação.',
+    image: '/projects/enderecador.jpg',
+    alt: 'Interface real do Endereçador com formulário de remetente e prévia da etiqueta e da declaração de conteúdo.',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'ViaCEP'],
+    github: 'https://github.com/CHCLopes/Projeto-Enderecador',
+    live: 'https://enderecador.netlify.app/',
+    role: 'Desenvolvimento front-end e organização da interface para o fluxo de endereçamento.',
+    problem: 'Preparar etiquetas manualmente exige repetir informações e organizar documentos de postagem.',
+    decisions: ['Integrar a consulta de CEP para apoiar o preenchimento dos endereços.', 'Separar remetente e destinatário, com prévia dos documentos de impressão.', 'Reunir etiquetas em uma fila e contemplar envios nacionais e internacionais.'],
+    evidence: 'Aplicação publicada com consulta de CEP, fila de impressão e prévia de documentos. O repositório permite consultar a implementação.',
+    next: 'Medir o tempo de preparação e os erros de preenchimento em tarefas reais de postagem.',
+  },
+  {
+    id: 'genius',
+    number: '04',
     title: 'Sk8-Genius',
     category: 'Interface e interação',
     headline: 'Um clássico reconstruído para a web.',
@@ -78,7 +92,7 @@ export const projects: readonly PortfolioProject[] = [
     next: 'Ampliar a avaliação de acessibilidade e comparar a experiência em diferentes dispositivos.',
   },
   {
-    id: 'bikcraft', number: '04', title: 'Bikcraft', category: 'Estudo de responsividade',
+    id: 'bikcraft', number: '05', title: 'Bikcraft', category: 'Estudo de responsividade',
     headline: 'Do layout no Figma à experiência mobile first.',
     description: 'Landing page em HTML e CSS desenvolvida a partir do layout do curso da Origamid. O trabalho se concentrou em refatorar o CSS para mobile first e adaptar a composição a diferentes tamanhos de tela.',
     image: '/projects/gallery/bikcraft-1.png', alt: 'Landing page Bikcraft com apresentação da bicicleta e lista de vantagens.',
@@ -90,7 +104,7 @@ export const projects: readonly PortfolioProject[] = [
     next: 'Revisar a navegação por teclado e a legibilidade em diferentes tamanhos de tela.',
   },
   {
-    id: 'ia-ux', number: '05', title: 'Desenvolvimento assistido por IA', category: 'Caderno de estudo',
+    id: 'ia-ux', number: '06', title: 'Desenvolvimento assistido por IA', category: 'Caderno de estudo',
     headline: 'Especificar, contextualizar e revisar o trabalho da IA.',
     description: 'Caderno temático organizado com apoio do NotebookLM. Reúne reflexões sobre desenvolvimento assistido por IA, engenharia de prompts e governança técnica a partir de estudos sobre Sk8-Genius e um narrador digital de RPG.',
     cover: 'study', imageCaption: 'Capa editorial do caderno de estudo.',
@@ -102,7 +116,7 @@ export const projects: readonly PortfolioProject[] = [
     next: 'Relacionar os aprendizados a ensaios reproduzíveis e evidências de validação de cada caso.',
   },
   {
-    id: 'antigravity-harness', number: '06', title: 'MyAntigravityHarness', category: 'Governança de agentes',
+    id: 'antigravity-harness', number: '07', title: 'MyAntigravityHarness', category: 'Governança de agentes',
     headline: 'Dar direção, limites e critérios ao trabalho dos agentes.',
     description: 'Estrutura de orquestração para o Antigravity, com governança, roteamento de skills e desenvolvimento orientado por especificações. Reúne templates, um executor de planos e um validador de conformidade em Python.',
     cover: 'harness', imageCaption: 'Capa editorial do projeto de governança de agentes.',
