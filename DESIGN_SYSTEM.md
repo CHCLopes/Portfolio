@@ -130,3 +130,13 @@ O conteúdo atribui a Carlos o front-end e a atuação como agilista em uma equi
 ## Contato — 09/10/2026
 
 A identificação da seção é “Vamos conversar”. O convite apresenta oportunidades em gestão de equipes e processos ou desenvolvimento de soluções digitais, relacionando a experiência na operação à construção de interfaces, organização de informações e condução de agentes de IA. O título “O próximo desafio.” e os meios de contato mantêm a composição existente.
+
+## Rodapé e processo de construção — 09/10/2026
+
+O botão “Saiba mais sobre este site.” substitui a assinatura técnica do rodapé. Usa contorno verde, cantos arredondados e fundo suave ao passar o mouse, com os tokens dos dois temas. No celular, aparece após o copyright e o retorno ao início.
+
+O modal “Sobre este site” reutiliza a estrutura visual dos projetos: cabeçalho verde fixo, título verde e colunas off-white no claro, com correspondência em petróleo e verde no escuro. No desktop, a coluna esquerda apresenta sete sprints, uma por seção, com direção do produto e entregas em lista; a coluna direita apresenta os papéis, o ciclo de revisão, as tecnologias e o acesso ao PR. As duas colunas têm rolagem independente. Abaixo de 800 px, o backlog precede a colaboração em uma coluna de rolagem compartilhada, preservando o cabeçalho e o fechamento visíveis.
+
+O relato descreve Carlos como PO / Scrum Master e Codex como a frente de desenvolvimento assistido por IA. As sprints organizam as etapas realizadas, sem atribuir duração, cerimônias ou métricas não registradas. As decisões de produto e a aceitação final permanecem com Carlos. O conteúdo identifica o refinamento em andamento e a revisão em prévia antes da publicação.
+
+O `dialog` nativo bloqueia a interação e a rolagem da página ao fundo, permite fechamento pelo botão, Escape e clique externo e restaura o foco ao acionador. Verificação local realizada nos dois temas, no desktop, em 1024 × 600, 390 × 844 e 320 × 640: sem transbordamento horizontal, com leitura até o final, cabeçalho estável e retorno de foco. Build e lint passaram; o modal do JBL Desk manteve suas duas colunas e galeria.
