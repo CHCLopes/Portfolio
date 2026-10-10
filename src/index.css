@@ -247,8 +247,14 @@ h2 span{color:var(--green)}
  .hero-title-orbit .hero-orbit{width:min(108%,560px);top:50%}
  .hero-emblem{width:160px;border-radius:20px;justify-self:center;margin-right:0}
  .hero-specialty{grid-template-columns:repeat(2,max-content);column-gap:0;justify-content:space-evenly;margin-inline:auto}
- .hero-description{text-align:justify;text-align-last:start}
- .about-intro h2{text-align:center}
+ .hero-description,.about-intro>p:not(.eyebrow),.section-heading>p,
+ .experience-item p:not(.eyebrow),.publication>div>p:last-child,
+ .contact-layout>div>p:not(.eyebrow),.project-copy>p:not(.project-category),
+ .case-content p,.case-content li,.case-chapter>p:not(.eyebrow),.case-evidence p,
+ .modal-heading>p,.showcase-card-copy>p:last-of-type,
+ .process-intro>p,.process-direction,.process-deliveries li>span,
+ .process-note,.process-roles dd,.process-release p{text-align:justify;text-align-last:start}
+ .about-intro>.eyebrow,.about-intro h2{text-align:center}
  .about-intro .about-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:center;justify-items:center}
  .about-intro .about-links .text-link{width:100%;justify-content:center;text-align:center;gap:8px}
  .about-intro .about-links svg{flex-shrink:0}
@@ -257,7 +263,11 @@ h2 span{color:var(--green)}
  .trajectory-section .section-heading>div,.writing-section .section-heading>div{width:100%}
  .education-note{margin-inline:auto}
  .publication-hint{justify-content:center}
- .publication{column-gap:15px}
+ .publication{grid-template-columns:minmax(0,1fr) 25px 22px;column-gap:15px}
+ .publication>div{grid-column:1;grid-row:1}
+ .publication-number{grid-column:2;grid-row:1}
+ .publication>svg{grid-column:3;grid-row:1}
+ .publication-thumbnail{left:auto;right:25px}
  .footer-inner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 18px}
  .footer-inner>a{justify-self:end}
 }

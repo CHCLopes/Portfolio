@@ -148,3 +148,10 @@ Até 799 px, o Hero usa título e ilustração centralizados em uma coluna. Um c
 No Sobre mim, título, retrato e legenda ficam centralizados; os dois links ocupam colunas iguais com intervalo de 16 px e permitem quebra do texto em telas estreitas. O CTA “Mais no GitHub” fica centralizado. Os títulos e textos introdutórios da Trajetória e das Publicações também são centralizados, incluindo a formação e a instrução de leitura. Nas publicações, o intervalo horizontal da grade passa de 13 para 15 px, aumentando em 2 px a separação entre miniatura e texto. No rodapé, copyright e retorno ao início ocupam a primeira linha, e o botão sobre o site fica centralizado na segunda.
 
 Alinhamentos e ausência de transbordamento horizontal conferidos em 320, 360, 390, 412, 430 e 768 px. A largura de 412 px é uma referência de composição para celular, sem representar um teste de desempenho no hardware do Moto G84. Na comparação em 1280 × 720, as medidas, posições e estilos dos elementos desktop inspecionados permaneceram iguais.
+
+
+### Leitura e publicações no mobile — 09/10/2026
+
+Abaixo de 800 px, os parágrafos de conteúdo do site, as descrições dos cards e os textos dos modais usam alinhamento justificado, com a última linha à esquerda. Títulos, rótulos, instruções, formação e legendas conservam seus alinhamentos próprios. O rótulo de Sobre mim, “Projetos e Trabalhos” e “Deslize para explorar” ficam centralizados. As introduções em prosa seguem a nova regra de justificação.
+
+Nas publicações, o texto ocupa a coluna esquerda, e a miniatura e o número ficam à direita, antes da seta externa. As imagens mantêm 48 × 64 px, cantos arredondados e a separação existente de 4 px em relação ao texto. A inversão usa posicionamento de grade, sem alterar a ordem semântica nem o link único de cada item. Estilos desktop permanecem inalterados.

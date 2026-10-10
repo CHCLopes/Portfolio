@@ -101,7 +101,8 @@
  .modal-meta{flex-wrap:wrap}.modal-meta .tags{justify-content:flex-start}
 }
 @media(max-width:799px){
- .project-showcase{padding-top:36px}.project-view-bar{align-items:flex-start;flex-direction:column;gap:18px}
+ .project-showcase{padding-top:36px}.project-view-bar{align-items:center;flex-direction:column;gap:18px;text-align:center}
+ .showcase-hint{justify-content:center;text-align:center}
  .project-showcase .carousel-section{padding-top:28px;padding-bottom:44px}
  .showcase-heading.section-heading{flex-direction:row;gap:16px;align-items:flex-end}
  .showcase-heading h2{font-size:43px}
