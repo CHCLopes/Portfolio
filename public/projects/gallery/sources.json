@@ -1,0 +1,88 @@
+[
+  {
+    "file": "enderecador-desktop.png",
+    "source": "https://raw.githubusercontent.com/CHCLopes/Projeto-Enderecador/main/src/assets/printDesktop.png",
+    "retrieved": "2026-10-09",
+    "sha256": "C352E357AD0DA7434D916F522DE1369F735EC016646A3F14AC910CF03385A10F"
+  },
+  {
+    "file": "enderecador-preview.png",
+    "source": "https://raw.githubusercontent.com/CHCLopes/Projeto-Enderecador/main/src/assets/printDesktop1.png",
+    "retrieved": "2026-10-09",
+    "sha256": "E29464050B353B4A009C99CA0A9A61454889A870C7BDFF722891884ECF29A667"
+  },
+  {
+    "file": "enderecador-mobile.png",
+    "source": "https://raw.githubusercontent.com/CHCLopes/Projeto-Enderecador/main/src/assets/printMobile1.png",
+    "retrieved": "2026-10-09",
+    "sha256": "1651A3D3DE0BC8A37D074A9F41C1C4676818531D84F3458A0E9EA4D451935467"
+  },
+  {
+    "file": "massoterapia-hero.jpg",
+    "source": "https://raw.githubusercontent.com/CHCLopes/ProjetoMassoterapia/main/public/images/menuComHero.jpg",
+    "retrieved": "2026-10-09",
+    "sha256": "40F2C22ACF1F402EF3CEEACC3A0883A291B0EDA4190EEE62C0057B52EACDC8AD"
+  },
+  {
+    "file": "massoterapia-servicos.jpg",
+    "source": "https://raw.githubusercontent.com/CHCLopes/ProjetoMassoterapia/main/public/images/servicos.jpg",
+    "retrieved": "2026-10-09",
+    "sha256": "F0E073A652E7F6926C44582A228643635E4FFC6F8E7523FB25450E11B9D5A9F0"
+  },
+  {
+    "file": "massoterapia-sobre.jpg",
+    "source": "https://raw.githubusercontent.com/CHCLopes/ProjetoMassoterapia/main/public/images/sobre.jpg",
+    "retrieved": "2026-10-09",
+    "sha256": "B397CFC97EAC01A71762C534396F84C617AB09DB2EAB5FEC6F5017D28A7AFB10"
+  },
+  {
+    "file": "genius-desktop.jpg",
+    "source": "https://raw.githubusercontent.com/CHCLopes/Sk8-Genius/main/public/printDesktopTabletLigado.jpg",
+    "retrieved": "2026-10-09",
+    "sha256": "535193108EC34FBF5F09051EF198842A24B125E1389175F574B377A78D508776"
+  },
+  {
+    "file": "genius-competitivo.jpg",
+    "source": "https://raw.githubusercontent.com/CHCLopes/Sk8-Genius/main/public/printCompetitivo.jpg",
+    "retrieved": "2026-10-09",
+    "sha256": "40880851A5C74854CE862E9AAA09F8AEC40A6D21F78224962264D11DFB0BF54D"
+  },
+  {
+    "file": "genius-ajuda.jpg",
+    "source": "https://raw.githubusercontent.com/CHCLopes/Sk8-Genius/main/public/printModalAjuda.jpg",
+    "retrieved": "2026-10-09",
+    "sha256": "C6560F431A28D6BC4F2D7DDF3198CC99DD691BF794DF5209B535CD72C1CDFA38"
+  },
+  {
+    "file": "bikcraft-1.png",
+    "source": "https://raw.githubusercontent.com/CHCLopes/LandingPageBikCraft/231cd408b632c5b6cba3d7c26c101de3b123e5ff/img/Print1.png",
+    "retrieved": "2026-10-09",
+    "sha256": "7E0405423A4D3712F5A75B643C62AA4DE40B119EEAF73A64FA04D2BBF811B9A7"
+  },
+  {
+    "file": "bikcraft-2.png",
+    "source": "https://raw.githubusercontent.com/CHCLopes/LandingPageBikCraft/231cd408b632c5b6cba3d7c26c101de3b123e5ff/img/Print2.png",
+    "retrieved": "2026-10-09",
+    "sha256": "803307E1392926C7F2445999F6FA961FD715E9384549C1934E991AEF88509123"
+  },
+  {
+    "file": "bikcraft-3.png",
+    "source": "https://raw.githubusercontent.com/CHCLopes/LandingPageBikCraft/231cd408b632c5b6cba3d7c26c101de3b123e5ff/img/Print3.png",
+    "retrieved": "2026-10-09",
+    "sha256": "6B4F6C9B30A0DA7C93A79B1506AFEF0E2141A5657221C998AFAA7FAEFD9C3E85"
+  },
+  {
+    "file": "JBLDesk-TelaInicialMobile01.png",
+    "source": "https://notebook.google.com/notebook/a6e499bc-95b1-44fd-980c-e548c21a4cdc",
+    "source_id": "86e8b7e3-2430-43d7-8786-5b1c4009fb31",
+    "retrieved": "2026-10-09",
+    "sha256": "2275808731020F3C4F06637017DC3A7F47788831CE99CC619452F5659BBF875F"
+  },
+  {
+    "file": "JBLDesk-TelaInicialMobile05.png",
+    "source": "https://notebook.google.com/notebook/a6e499bc-95b1-44fd-980c-e548c21a4cdc",
+    "source_id": "f3bb7dd8-58c9-47ac-adc1-4633fdb1c28e",
+    "retrieved": "2026-10-09",
+    "sha256": "F8E8BA438197807EF0BEAB84DCC654FB212669DB4EC5D4F9C3366FE49A4352E5"
+  }
+]
