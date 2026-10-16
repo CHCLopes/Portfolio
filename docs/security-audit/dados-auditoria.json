@@ -1,0 +1,179 @@
+{
+  "project": "Portfólio de Carlos Henrique Lopes",
+  "date": "16/10/2026",
+  "timezone": "America/Fortaleza",
+  "base_commit": "e8229493d1ffd9e00577c8d71056f0d4adad19c2",
+  "branch": "main",
+  "snapshot": "Árvore de trabalho local após melhorias de SEO e acessibilidade; alterações ainda não publicadas.",
+  "snapshot_sha256": "6d7d30815b2958502c6fb6cfedf0fe3de542bbfe9fd0d8d502d30f69e9b46d9a",
+  "stack": {
+    "linguagem": "TypeScript e JavaScript",
+    "frontend": "React 19.2.1 / React DOM 19.2.1",
+    "build": "Vite 7.2.7 / TypeScript 5.9.3",
+    "estilos": "Tailwind CSS e CSS autoral com tokens",
+    "deploy": "Netlify, saída estática dist/",
+    "auth": "Não existe autenticação de aplicação.",
+    "database": "Nenhum banco, ORM ou query builder.",
+    "tenant": "Não existe isolamento de tenant/dono porque o conteúdo é público."
+  },
+  "inventory": {
+    "backend_handlers": [],
+    "frontend_permission_gates": [],
+    "public_controls": [
+      "Seleção de projeto e galeria",
+      "Preferência de tema em localStorage",
+      "Pausa da animação",
+      "Navegação e cópia do e-mail público"
+    ],
+    "files": 106,
+    "text_files": 53,
+    "git_commits": 67,
+    "historical_text_blobs": 186,
+    "historical_binary_blobs": 64,
+    "bundles": [
+      "dist/assets/index-C7slHcQK.js"
+    ]
+  },
+  "categories": [
+    {
+      "id": "C1",
+      "name": "Isolamento de tenant/dono",
+      "status": "Não aplicável",
+      "findings": 0,
+      "reason": "Não há banco, queries ou armazenamento de objetos privados. Dados são módulos e arquivos públicos."
+    },
+    {
+      "id": "C2",
+      "name": "Permissões no servidor",
+      "status": "Não aplicável",
+      "findings": 0,
+      "reason": "Nenhum handler de backend ou gate de papel autenticado no frontend. Estados visuais não concedem privilégios."
+    },
+    {
+      "id": "C3",
+      "name": "IDOR",
+      "status": "Não aplicável",
+      "findings": 0,
+      "reason": "Nenhuma rota de leitura/escrita de objeto privado por ID. Os identificadores dos cards apontam a conteúdo público do build."
+    },
+    {
+      "id": "C4",
+      "name": "Segredos embutidos",
+      "status": "Verificado",
+      "findings": 0,
+      "reason": "Nenhum candidato nos arquivos textuais atuais, em 186 blobs textuais históricos e nos bundles JavaScript disponíveis."
+    },
+    {
+      "id": "C5",
+      "name": "XSS",
+      "status": "Protegido nos fluxos revisados",
+      "findings": 0,
+      "reason": "Conteúdo em JSX, tema validado e URLs locais/HTTPS estáticas. Não encontrado fluxo de entrada externa para HTML bruto, eval ou Function."
+    }
+  ],
+  "findings": [],
+  "evidence": [
+    {
+      "id": "PF-01",
+      "file": "src/components/ThemeToggle.tsx",
+      "line_start": 6,
+      "line_end": 6,
+      "snippet": "try { const value = localStorage.getItem('carlos-portfolio-theme'); return value === 'dark' || value === 'light' ? value : null; }",
+      "note": "Entrada do localStorage limitada aos valores light e dark antes de alterar o tema. Não há interpolação em HTML."
+    },
+    {
+      "id": "PF-02",
+      "file": "src/sections/Projects.tsx",
+      "line_start": 9,
+      "line_end": 9,
+      "snippet": "return <><p>{project.description}</p>{showTech && <ul className=\"tags\" aria-label={'Tecnologias de ' + project.title}>{project.tech.map(tech => <li key={tech}>{tech}</li>)}</ul>}",
+      "note": "Descrições renderizadas em JSX; origem no módulo estático portfolio.ts. Nenhum sink HTML bruto foi encontrado no código autoral."
+    },
+    {
+      "id": "PF-03",
+      "file": "src/components/ProjectGallery.tsx",
+      "line_start": 35,
+      "line_end": 35,
+      "snippet": "<a href={image.src} target=\"_blank\" aria-describedby=\"new-tab-hint\" rel=\"noopener noreferrer\" aria-label={`Abrir imagem ${index + 1} de ${title} em tamanho completo`} tabIndex={index === active ? 0 : -1}><img src={image.src} alt={",
+      "note": "URLs de imagens chegam do mapa estático projectImages, utilizado por ProjectModal. Não são construídas a partir de query string, hash ou formulário."
+    },
+    {
+      "id": "PF-04",
+      "file": "src/components/HeroComet.tsx",
+      "line_start": 63,
+      "line_end": 63,
+      "snippet": "if (layer === midpoint.layer) segment?.setAttribute('d', `M${leading.x.toFixed(2)} ${leading.y.toFixed(2)} L${trailing.x.toFixed(2)} ${trailing.y.toFixed(2)}`);",
+      "note": "O atributo SVG d recebe coordenadas numéricas internas, formatadas com toFixed. setAttribute aqui não recebe HTML nem entrada externa."
+    },
+    {
+      "id": "PF-05",
+      "file": "src/sections/ProjectShowcase.tsx",
+      "line_start": 14,
+      "line_end": 14,
+      "snippet": "const selected = projectCards.find(project => project.id === selectedId);",
+      "note": "A seleção usa um conjunto de projetos públicos definido no build. Não consulta objetos privados nem representa autorização."
+    },
+    {
+      "id": "PF-06",
+      "file": "index.html",
+      "line_start": 16,
+      "line_end": 16,
+      "snippet": "const theme = preference === 'dark' || preference === 'light' ? preference : 'light';",
+      "note": "O inicializador do tema aplica a mesma lista fechada de valores antes do React. O JSON-LD também é literal estático."
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "Informação, não vulnerabilidade confirmada",
+      "file": "netlify.toml",
+      "note": "Não há política CSP declarada neste arquivo versionado. Uma política pode acrescentar defesa em profundidade, mas sua ausência isolada não confirma XSS. Cabeçalhos efetivos do painel/produção não foram auditados."
+    },
+    {
+      "type": "Limite de verificação",
+      "file": "package-lock.json",
+      "note": "Versões foram inventariadas. Não foi executada análise completa de CVEs ou da cadeia de dependências; isso é distinto das cinco categorias solicitadas."
+    }
+  ],
+  "limits": [
+    "Revisão local não destrutiva. Não houve exploração de produção, uso de credenciais, login, publicação de issues, commit ou push.",
+    "A ausência de candidatos em uma busca por padrões não garante ausência de segredos. Segredos ofuscados, divididos, criptografados e fora do repositório podem não ser detectados.",
+    "Histórico local não raso: 67 commits alcançáveis pelas referências locais disponíveis. Não foram buscados objetos remotos apagados ou inalcançáveis.",
+    "64 blobs históricos binários não foram decodificados. Imagens, fontes e PDFs não passaram por OCR ou inspeção de metadados sensíveis. Seus hashes atuais estão no manifesto.",
+    "Pastas locais ignoradas (work, outputs, node_modules, .netlify), variáveis de ambiente e configurações privadas do provedor estão fora do corpus. O PDF não relacionado e o cache .vite existentes na raiz foram preservados.",
+    "Bundles JavaScript disponíveis foram examinados por padrões; source maps de produção não estavam disponíveis. Fontes TypeScript/TSX locais foram examinadas diretamente.",
+    "A classificação de proteção descreve somente os fluxos identificados. O relatório não é certificação nem garantia de segurança integral."
+  ],
+  "recommendations": [
+    {
+      "priority": "P1 - se houver expansão",
+      "title": "Reauditar antes de adicionar dados privados ou autenticação",
+      "description": "Se um backend, banco ou área administrativa for proposto, definir autorização no servidor e validar posse de objetos antes de expor essas operações. As três categorias não aplicáveis hoje deverão ser reavaliadas."
+    },
+    {
+      "priority": "P2 - defesa em profundidade",
+      "title": "Avaliar CSP em uma mudança própria",
+      "description": "Mapear os recursos necessários e testar uma política que considere os scripts inline de tema e JSON-LD. Não aplicar uma política ampla às cegas nem tratar esta sugestão como correção de XSS confirmado."
+    },
+    {
+      "priority": "P2 - prevenção",
+      "title": "Incluir revisão de segredos nas próximas entregas",
+      "description": "Executar novamente a varredura sobre fonte, histórico e bundle após mudanças de integrações. Revisar manualmente os arquivos públicos antes de enviar novas capturas ou documentos."
+    },
+    {
+      "priority": "P3 - trabalho separado",
+      "title": "Revisar dependências e configurações do provedor",
+      "description": "Em escopo específico, consultar advisories das versões instaladas e conferir cabeçalhos, permissões e variáveis no painel da Netlify, sem presumir vulnerabilidade apenas por número de versão."
+    }
+  ],
+  "references": [
+    {
+      "title": "React - elementos DOM e riscos de HTML bruto",
+      "url": "https://react.dev/reference/react-dom/components/common#dangerously-setting-the-inner-html"
+    },
+    {
+      "title": "Procedimento local da skill auditoria-seguranca-codigo",
+      "url": "C:/Users/skate/.codex/skills/auditoria-seguranca-codigo/references/procedimento.md"
+    }
+  ],
+  "issues_markdown": "# ISSUES PARA O GITHUB\n\nNenhuma issue de vulnerabilidade foi gerada: 0 achados confirmados nas cinco categorias avaliadas.\n\nAs recomendações de defesa em profundidade e as lacunas de verificação não foram promovidas a vulnerabilidades. Não houve publicação automática de issues.\n"
+}

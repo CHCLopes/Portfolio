@@ -4,6 +4,14 @@ import type { ProjectImage } from '../components/ProjectGallery';
 
 type ProjectCard = Pick<PortfolioProject, 'id' | 'title' | 'category' | 'headline' | 'image' | 'alt' | 'cover' | 'tech'> & { featured: boolean };
 
+// Small previews are separate from the original screenshots used by the galleries.
+export const cardPreviews: Record<string, { src: string; srcSet: string }> = Object.fromEntries(
+  ['jbl-desk', 'massoterapia', 'enderecador', 'genius', 'bikcraft'].map(id => [id, {
+    src: `/projects/previews/${id}-960.webp`,
+    srcSet: `/projects/previews/${id}-480.webp 480w, /projects/previews/${id}-960.webp 960w`,
+  }]),
+);
+
 export const projectCards: readonly ProjectCard[] = [
   { id: 'jbl-desk', title: 'JBL Desk', category: 'Projeto corporativo', headline: 'Uma interface para acompanhar o desempenho comercial.', image: '/projects/jbl-desk.jpg', alt: 'Dashboard do JBL Desk. Os números apresentados são fictícios.', tech: ['Power Apps', 'Power Fx', 'UX/UI'], featured: true },
   ...projects.map(project => ({ ...project, featured: false })),

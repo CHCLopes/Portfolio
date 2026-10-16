@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { ArrowUpRight, Check, X } from 'lucide-react';
+import { containDialogTab } from './dialogKeyboard';
 import { siteProcessSprints } from '../data/siteProcess';
 import '../project-showcase.css';
 import '../site-process.css';
@@ -26,16 +27,16 @@ export function SiteProcessModal({ onDismiss }: { onDismiss: () => void }) {
     };
   }, []);
 
-  return <dialog ref={dialog} className="project-modal site-process-modal" aria-labelledby="site-process-title" onCancel={event => { event.preventDefault(); onDismiss(); }} onClick={event => {
+  return <dialog ref={dialog} className="project-modal site-process-modal" aria-labelledby="site-process-title" onKeyDown={containDialogTab} onCancel={event => { event.preventDefault(); onDismiss(); }} onClick={event => {
     if (event.target !== event.currentTarget) return;
     const bounds = event.currentTarget.getBoundingClientRect();
     if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) onDismiss();
   }}>
-    <header className="modal-header">
+    <div className="modal-header">
       <div className="modal-toolbar"><span className="eyebrow">Bastidores / Construção do portfólio</span><button type="button" className="round-control" aria-label="Fechar processo de construção" onClick={onDismiss} autoFocus><X size={20} aria-hidden="true" /></button></div>
-      <div className="modal-heading"><h2 id="site-process-title">Sobre este site<span className="accent-period">.</span></h2><p>Um produto construído por etapas, com decisões humanas, desenvolvimento assistido por IA e revisão a cada entrega.</p></div>
+      <div className="modal-heading"><h2 id="site-process-title" tabIndex={-1}>Sobre este site<span className="accent-period">.</span></h2><p>Um produto construído por etapas, com decisões humanas, desenvolvimento assistido por IA e revisão a cada entrega.</p></div>
       <div className="modal-meta"><span>Da intenção à interface</span><ul className="tags" aria-label="Tecnologias deste site"><li>React</li><li>TypeScript</li><li>Vite</li></ul></div>
-    </header>
+    </div>
     <div className="modal-body">
       <section className="modal-text process-backlog" aria-labelledby="process-backlog-title" tabIndex={0}>
         <div className="process-intro"><span className="eyebrow">Backlog / Entregas por seção</span><h3 id="process-backlog-title">Uma seção. Uma rodada de evolução.</h3><p>As etapas abaixo estão organizadas como sprints para contar o processo. Cada uma reúne a direção dada por Carlos e o que foi construído e refinado a partir dela.</p></div>
@@ -58,7 +59,7 @@ export function SiteProcessModal({ onDismiss }: { onDismiss: () => void }) {
           <div><dt><span>Desenvolvimento assistido por IA</span>Codex</dt><dd>Representa a frente de desenvolvimento nesta colaboração: investiga, propõe soluções, implementa e verifica as mudanças dentro do escopo definido.</dd></div>
         </dl>
         <div className="process-cycle"><h4>O ciclo de cada entrega</h4><ol><li>Definir a intenção</li><li>Construir uma versão</li><li>Verificar e revisar</li><li>Refinar com feedback</li></ol></div>
-        <div className="process-release"><span className="eyebrow">Entrega em revisão</span><p>Build, lint e conferência visual acompanham os refinamentos. A prévia permite comparar e revisar o resultado antes da publicação, preservando a história do projeto.</p><a className="text-link" href="https://github.com/CHCLopes/Portfolio/pull/1" target="_blank" rel="noreferrer">Acompanhar a evolução no GitHub <ArrowUpRight size={16} aria-hidden="true" /></a></div>
+        <div className="process-release"><span className="eyebrow">Entrega em revisão</span><p>Build, lint e conferência visual acompanham os refinamentos. A prévia permite comparar e revisar o resultado antes da publicação, preservando a história do projeto.</p><a className="text-link" href="https://github.com/CHCLopes/Portfolio/pull/1" target="_blank" aria-describedby="new-tab-hint" rel="noreferrer">Acompanhar a evolução no GitHub <ArrowUpRight size={16} aria-hidden="true" /></a></div>
       </section>
     </div>
   </dialog>;

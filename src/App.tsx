@@ -8,6 +8,6 @@ import { Contact } from './sections/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
-  return <><a className="skip-link" href="#main">Pular para o conteúdo</a><Navbar /><main id="main" tabIndex={-1}><Hero /><About /><ProjectShowcase /><Trajectory /><Approach /><Contact /></main><Footer /></>;
+  return <><a className="skip-link" href="#main">Pular para o conteúdo</a><Navbar /><main id="main" tabIndex={-1}><span id="new-tab-hint" className="sr-only">Abre em nova aba.</span><Hero /><About /><ProjectShowcase /><Trajectory /><Approach /><Contact /></main><Footer /></>;
 }
 export default App;

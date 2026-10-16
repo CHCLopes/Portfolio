@@ -1,4 +1,4 @@
-@font-face{font-family:'Manrope';src:url('/fonts/manrope-extralight.ttf') format('truetype');font-style:normal;font-weight:200;font-display:swap}
+@font-face{font-family:'Manrope';src:url('/fonts/manrope-extralight.woff2') format('woff2');font-style:normal;font-weight:200;font-display:swap}
 @font-face{font-family:'Manrope';src:url('/fonts/manrope-latin.woff2') format('woff2');font-style:normal;font-weight:400 800;font-display:swap}
 @font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-latin.woff2') format('woff2');font-style:normal;font-weight:400 700;font-display:swap}
 @tailwind base;
@@ -21,7 +21,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 button,a,summary{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 img{display:block;max-width:100%;height:auto}
 h1,h2,h3,h4,p,figure{margin:0}
-h1,h2,h3,h4{font-family:var(--font-display)}
+h1,h2,h3,h4{font-family:var(--font-display);overflow-wrap:anywhere}
 ul,ol{margin:0;padding:0}
 p{text-wrap:pretty}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--green);outline-offset:5px}
@@ -276,9 +276,24 @@ h2 span{color:var(--green)}
  @keyframes arrive{from{transform:translateY(14px)}to{transform:translateY(0)}}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+/* Accessible controls preserve the approved palette and layout. */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.brand{min-width:0;flex-shrink:1}.brand>span:last-child{min-width:0;overflow-wrap:anywhere}.menu-toggle{flex-shrink:0}
+.motion-toggle{border:0;background:transparent;padding:0;min-height:44px;margin-top:8px;color:var(--green);font-size:13px}
+.motion-toggle:hover{text-decoration:underline;text-underline-offset:4px}
+h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
+.chapter-nav a{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px}
+@media(max-width:799px){.motion-toggle{display:flex;margin-inline:auto}.hero-specialty{grid-template-columns:repeat(2,minmax(0,max-content))}.hero-specialty li>span{min-width:0;overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){.motion-toggle{display:none}}
+@media(forced-colors:active){
+ :root,:root[data-theme='dark']{--paper:Canvas;--surface:Canvas;--ink:CanvasText;--muted:CanvasText;--green:CanvasText;--wash:Canvas;--line:CanvasText;--panel:Canvas;--button-bg:ButtonFace;--button-ink:ButtonText;--contact-bg:Canvas;--contact-ink:CanvasText;--contact-muted:CanvasText;--accent:CanvasText;--accent-ink:Canvas}
+ .hero-orbit{display:none}
+ .button,.round-control,.menu-toggle,.theme-toggle,.footer-process-button{border:1px solid ButtonText}
+ :focus-visible{outline:3px solid Highlight!important}
+}
 @media print{
  #main>*+*::before,.site-footer::before{display:none}
  :root,:root[data-theme='dark']{color-scheme:light;--paper:#fff;--surface:#fff;--ink:#153f43;--muted:#496365;--green:#386e58;--wash:#fff;--line:#cddad4}
- .site-header,.skip-link,.hero-actions,.copy-email,.button{display:none}.shell{width:100%}.section,.contact-section{padding-block:24px}.hero-editorial{padding-top:0}.hero h1{font-size:59px}.hero-context{margin-block:25px}.case-layout{display:block}.case-map{position:static;margin:20px 0;break-inside:avoid}.case-chapter{padding-block:16px}.case-chapter,.project,.experience-item,.publication{break-inside:avoid}.project-list{display:block}.project{margin-block:25px}.contact-section{background:var(--paper);color:var(--ink)}.contact-section h2{font-size:43px}.contact-section h2 span,.contact-section .eyebrow,.contact-section p,.contact-social small{color:var(--muted)!important}
+ .site-header,.skip-link,.hero-actions,.motion-toggle,.copy-email,.button{display:none}.shell{width:100%}.section,.contact-section{padding-block:24px}.hero-editorial{padding-top:0}.hero h1{font-size:59px}.hero-context{margin-block:25px}.case-layout{display:block}.case-map{position:static;margin:20px 0;break-inside:avoid}.case-chapter{padding-block:16px}.case-chapter,.project,.experience-item,.publication{break-inside:avoid}.project-list{display:block}.project{margin-block:25px}.contact-section{background:var(--paper);color:var(--ink)}.contact-section h2{font-size:43px}.contact-section h2 span,.contact-section .eyebrow,.contact-section p,.contact-social small{color:var(--muted)!important}
 }
 

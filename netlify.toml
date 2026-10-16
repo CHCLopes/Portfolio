@@ -20,3 +20,15 @@
   from = "/contact.html"
   to = "/#contact"
   status = 301
+
+# Existing files keep their URLs; unknown paths return a real 404.
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Vite fingerprints these files, so a new build generates a new cache key.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

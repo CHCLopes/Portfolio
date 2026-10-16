@@ -155,3 +155,16 @@ Alinhamentos e ausência de transbordamento horizontal conferidos em 320, 360, 3
 Abaixo de 800 px, os parágrafos de conteúdo do site, as descrições dos cards e os textos dos modais usam alinhamento justificado, com a última linha à esquerda. Títulos, rótulos, instruções, formação e legendas conservam seus alinhamentos próprios. O rótulo de Sobre mim, “Projetos e Trabalhos” e “Deslize para explorar” ficam centralizados. As introduções em prosa seguem a nova regra de justificação.
 
 Nas publicações, o texto ocupa a coluna esquerda, e a miniatura e o número ficam à direita, antes da seta externa. As imagens mantêm 48 × 64 px, cantos arredondados e a separação existente de 4 px em relação ao texto. A inversão usa posicionamento de grade, sem alterar a ordem semântica nem o link único de cada item. Estilos desktop permanecem inalterados.
+
+
+## SEO e acessibilidade - 16/10/2026
+
+A identidade aqua, petróleo, off-white e verde permanece. O Hero oferece um controle discreto para pausar e retomar os cometas sem reiniciar a órbita; a preferência por movimento reduzido mantém a arte estática e oculta esse controle. A atualização visual da órbita é limitada a 30 fps e evita repetir alterações de visibilidade em segmentos cuja camada não mudou.
+
+O carrossel horizontal aceita setas, Home e End, com instrução e estado para leitores de tela. A galeria expõe somente o slide ativo à árvore de acessibilidade. Os modais preservam título, Escape e retorno de foco, com circulação de Tab dentro do diálogo. O menu móvel transfere o foco ao título após a navegação; o botão de tema tem nome acessível correspondente à ação visível.
+
+Os títulos podem quebrar palavras quando o usuário amplia o espaçamento de leitura. Abaixo de 600 px, o texto introdutório dos projetos fica abaixo do título para permitir reflow. Competências e marca podem se adaptar ao espaço disponível sem criar rolagem horizontal. Textos em prosa mantêm a justificação solicitada.
+
+Cores forçadas usam as cores do sistema para texto, superfícies e controles, com foco identificado por Highlight. As instruções exclusivas de leitores de tela ficam visualmente ocultas. Links externos anunciam a abertura em nova aba.
+
+Imagens responsivas WebP e a fonte Manrope ExtraLight em WOFF2 preservam as originais. A imagem de compartilhamento usa a mesma paleta e a ilustração do Hero. Canônica, dados estruturados e descoberta de rastreamento estão descritos em docs/seo-acessibilidade/README.md.

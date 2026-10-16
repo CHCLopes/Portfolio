@@ -39,7 +39,7 @@ export function FeaturedProject({ gallery, inModal = false, textOnly = false }: 
   </>;
   return <section id={inModal ? undefined : 'jbl-desk'} className="section featured-section" aria-labelledby="jbl-heading">
     <div className="shell">
-      <div className="feature-heading"><div><p className="eyebrow">Trabalho selecionado / Projeto corporativo</p><h2 id="jbl-heading">JBL Desk<span className="accent-period">.</span></h2></div><p>Uma interface para acompanhar<br />o desempenho comercial.</p></div>
+      <div className="feature-heading"><div><p className="eyebrow">Trabalho selecionado / Projeto corporativo</p><h2 id="jbl-heading" tabIndex={-1}>JBL Desk<span className="accent-period">.</span></h2></div><p>Uma interface para acompanhar<br />o desempenho comercial.</p></div>
       <div className="feature-meta"><span>JBL Nordeste</span><span>Front-end · UX/UI · Storytelling</span><span>Power Apps · Power Fx</span></div>
       <div className="case-layout">
         <div className="case-chapters">{chapters.map((chapter, index) => <article id={chapter.id} ref={element => { chapterRefs.current[index] = element; }} className={'case-chapter' + (active === index ? ' is-current' : '')} key={chapter.id} aria-labelledby={chapter.id + '-heading'}>
@@ -48,7 +48,7 @@ export function FeaturedProject({ gallery, inModal = false, textOnly = false }: 
         <figure className="case-map">
           <div className="map-topline"><span>JBL DESK / INTERFACE EM POWER APPS</span><span aria-hidden="true">↗</span></div>
           <nav className="chapter-nav" aria-label="Etapas do case JBL Desk">{chapters.map((chapter, index) => <a href={'#' + chapter.id} key={chapter.id} aria-current={active === index ? 'step' : undefined} onClick={inModal ? event => { event.preventDefault(); chapterRefs.current[index]?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' }); } : undefined}>{chapter.number} {chapter.label}</a>)}</nav>
-          {gallery ?? <a className="case-screen" href="/projects/jbl-desk.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir captura do JBL Desk em tamanho completo"><img src="/projects/jbl-desk.jpg" alt="Dashboard do JBL Desk com filtros, meta global, distribuição por área e evolução anual. Os números são fictícios." width="1024" height="580" loading="lazy" decoding="async" /></a>}
+          {gallery ?? <a className="case-screen" href="/projects/jbl-desk.jpg" target="_blank" aria-describedby="new-tab-hint" rel="noopener noreferrer" aria-label="Abrir captura do JBL Desk em tamanho completo"><img src="/projects/jbl-desk.jpg" alt="Dashboard do JBL Desk com filtros, meta global, distribuição por área e evolução anual. Os números são fictícios." width="1024" height="580" loading="lazy" decoding="async" /></a>}
           <div className="screen-note"><span>Em foco / {chapters[active].label}</span><p>{active === 0 ? 'Metas e produção reunidas em uma leitura da operação.' : active === 1 ? 'Cabeçalho, menu e rodapé organizados em componentes reutilizáveis.' : 'Filtros de período, área, convênio e gestor delimitam a análise.'}</p></div>
           <figcaption>Captura da aplicação. Base fictícia criada para desenvolver e validar a interface.</figcaption>
         </figure>

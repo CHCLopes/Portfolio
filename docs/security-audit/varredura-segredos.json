@@ -1,0 +1,756 @@
+{
+  "head": "e8229493d1ffd9e00577c8d71056f0d4adad19c2",
+  "shallow": false,
+  "commits": 67,
+  "history_text_blobs_scanned": 186,
+  "history_binary_blobs_not_text_scanned": 64,
+  "scope_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "fb49ec069c5f274597d2088093fd0268bfc1bcbdc33101263cb511ec648a9672",
+      "bytes": 422,
+      "text": true,
+      "lines": 34
+    },
+    {
+      "path": "DESIGN_SYSTEM.md",
+      "sha256": "f842b49370f9e39ec9fcf757eb70476dea9591067a956e78ba7c675f4c0b35a8",
+      "bytes": 24617,
+      "text": true,
+      "lines": 171
+    },
+    {
+      "path": "README.md",
+      "sha256": "16bab6de42767e5f0b53ba8dffbf46de4a22b6b298cad6c03ee3b359f106cfbc",
+      "bytes": 13326,
+      "text": true,
+      "lines": 202
+    },
+    {
+      "path": "docs/images/desktop-escuro.png",
+      "sha256": "7f600b92044e5ca0e673e4e8365ccbc7088b447341aeff9ae2f8e4cf0ff91ef9",
+      "bytes": 85697,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/desktop-hero.png",
+      "sha256": "bfb69a01bc59350c734a55299d2515181287e7adc4498a4723bc26a06703ca33",
+      "bytes": 83324,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/desktop-modal.png",
+      "sha256": "447817076d5312002eb4955635b1ca6f820de6dce63ca1b900a1b9c6b8e83d0a",
+      "bytes": 111203,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/desktop-processo.png",
+      "sha256": "eb78b0b0733b5d2b3456369ba97c24750e4b008ea233131a28ea26520de58c3d",
+      "bytes": 119223,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/desktop-projetos.png",
+      "sha256": "743fd1869076571b3a74a25657cc8828973c23e259b79a501caa7cb230c7033f",
+      "bytes": 96148,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/desktop-publicacoes.png",
+      "sha256": "730f248623281ce4ce5a3f05f3068d95de4605282239804f259dea15ec046b99",
+      "bytes": 85209,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/desktop-sobre.png",
+      "sha256": "d825f2c20c9f93c09a815c65fec1ce11a67d0f62a5dd10d20f330da2e06701f7",
+      "bytes": 74720,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/mobile-contato.png",
+      "sha256": "65d63f6c4c749f0fb2486ee4e627d218861f114eb65e0e53694e9b708ee24a08",
+      "bytes": 35588,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/mobile-hero.png",
+      "sha256": "16b27f196d20a43ab4a02fc66e6cb696a7dfbc7bcb67385f7f607f66176aa952",
+      "bytes": 37838,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "docs/images/mobile-projetos.png",
+      "sha256": "5cfc883760d41ac245b43b8922304b2b96bd863c700b4e29019d929d0008f514",
+      "bytes": 38816,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "eslint.config.js",
+      "sha256": "74bcb49fec61d75ef30542fbfe41f2498961f72a028a827c2091622b06d6921e",
+      "bytes": 639,
+      "text": true,
+      "lines": 24
+    },
+    {
+      "path": "index.html",
+      "sha256": "fc2a22df2c15c124542321408bac3f4d4a0dbb05061bf3851b3739c028be4952",
+      "bytes": 5685,
+      "text": true,
+      "lines": 103
+    },
+    {
+      "path": "netlify.toml",
+      "sha256": "dc0763ce9797689ca43ccb9426164285cca29a3b9a11d1ee9203101c76b550b8",
+      "bytes": 667,
+      "text": true,
+      "lines": 35
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d8c61f898883c6d2eb112344510bd206c1393718463190b3eac87daef76c77ff",
+      "bytes": 148207,
+      "text": true,
+      "lines": 4181
+    },
+    {
+      "path": "package.json",
+      "sha256": "ba903fe40ff1808d596b14f36f9d3ffa95540e1e1e427318d52ca03af6ed450e",
+      "bytes": 1039,
+      "text": true,
+      "lines": 39
+    },
+    {
+      "path": "postcss.config.js",
+      "sha256": "b554e0e63770163ec5e5023f0cdbe7b13acbce9ae1665225667a358cf84ea89c",
+      "bytes": 84,
+      "text": true,
+      "lines": 6
+    },
+    {
+      "path": "public/404.html",
+      "sha256": "c9e95cc4d53a23a020fe2beccbe843f3d824c50dec7d30758527a3b3283dd344",
+      "bytes": 976,
+      "text": true,
+      "lines": 3
+    },
+    {
+      "path": "public/carlos-lopes-trajetoria.pdf",
+      "sha256": "b89fa4c8c4565cbc90875e8d6e0bc7fdd010fc322cdcafaae82c35cc696d9448",
+      "bytes": 82573,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "382124697e7dddd58cafaf682238e3510525e53ca577945353539a22852e2492",
+      "bytes": 270,
+      "text": true,
+      "lines": 2
+    },
+    {
+      "path": "public/fonts/README.md",
+      "sha256": "b6a41f9873eb435af81f4bca94d4b8c78f47478c04d89de6153fb32904b25c31",
+      "bytes": 623,
+      "text": true,
+      "lines": 12
+    },
+    {
+      "path": "public/fonts/dm-sans-OFL.txt",
+      "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+      "bytes": 4482,
+      "text": true,
+      "lines": 94
+    },
+    {
+      "path": "public/fonts/dm-sans-latin.woff2",
+      "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+      "bytes": 36932,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/fonts/manrope-OFL.txt",
+      "sha256": "4b8929f05a122b7abb9059501dc7dc4df86f8c97d5a1769d60d82cf2d2795dde",
+      "bytes": 4480,
+      "text": true,
+      "lines": 94
+    },
+    {
+      "path": "public/fonts/manrope-extralight.ttf",
+      "sha256": "30c051f0b547252670ef3a41213ec8134db1373edf621187d97ed546f9959605",
+      "bytes": 94872,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/fonts/manrope-extralight.woff2",
+      "sha256": "9db5adb902d7c6d29ec90f8be3212432a94b5709cbea62453fabe680b5c38787",
+      "bytes": 28820,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/fonts/manrope-latin.woff2",
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "bytes": 24836,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/hero/agent-layers-1280.webp",
+      "sha256": "5e21b1625fbe66b82b3a4203c7ba2d9195b5ae993a9e218828e7d0254426db08",
+      "bytes": 70086,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/hero/agent-layers-640.webp",
+      "sha256": "ea098589ffde2ee9396226a87ed391c5964b930d67b6a14d13b92ad33e71bf53",
+      "bytes": 28680,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/hero/agent-layers.png",
+      "sha256": "c39170f0c07cd375361cf2e3025159aa998345ba6ed397370e41885766c4b433",
+      "bytes": 1240676,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/profile.jpg",
+      "sha256": "dae0a32b2a6ed70e8af40953adfc2a45be146e87377834958eafb536a20a404e",
+      "bytes": 23484,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/enderecador.jpg",
+      "sha256": "b78d6c0171f9da16fb5ec4b1e7a40e3578fabf674bc11fe79e7fa85652dc50ea",
+      "bytes": 92714,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/JBLDesk-TelaInicialMobile01.png",
+      "sha256": "2275808731020f3c4f06637017dc3a7f47788831ce99cc619452f5659bbf875f",
+      "bytes": 40867,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/JBLDesk-TelaInicialMobile05.png",
+      "sha256": "f8e8ba438197807ef0beab84dcc654fb212669db4ec5d4f9c3366fe49a4352e5",
+      "bytes": 36941,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/bikcraft-1.png",
+      "sha256": "7e0405423a4d3712f5a75b643c62aa4de40b119eeaf73a64fa04d2bbf811b9a7",
+      "bytes": 219018,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/bikcraft-2.png",
+      "sha256": "803307e1392926c7f2445999f6fa961fd715e9384549c1934e991aef88509123",
+      "bytes": 169537,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/bikcraft-3.png",
+      "sha256": "6b4f6c9b30a0da7c93a79b1506afef0e2141a5657221c998afaa7faefd9c3e85",
+      "bytes": 188053,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/enderecador-desktop.png",
+      "sha256": "c352e357ad0da7434d916f522de1369f735ec016646a3f14ac910cf03385a10f",
+      "bytes": 251986,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/enderecador-mobile.png",
+      "sha256": "1651a3d3de0bc8a37d074a9f41c1c4676818531d84f3458a0e9ea4d451935467",
+      "bytes": 97080,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/enderecador-preview.png",
+      "sha256": "e29464050b353b4a009c99ca0a9a61454889a870c7bdff722891884ecf29a667",
+      "bytes": 275120,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/genius-ajuda.jpg",
+      "sha256": "c6560f431a28d6bc4f2d7ddf3198cc99dd691bf794df5209b535cd72c1cdfa38",
+      "bytes": 73586,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/genius-competitivo.jpg",
+      "sha256": "40880851a5c74854ce862e9aaa09f8aec40a6d21f78224962264d11dfb0bf54d",
+      "bytes": 61433,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/genius-desktop.jpg",
+      "sha256": "535193108ec34fbf5f09051ef198842a24b125e1389175f574b377a78d508776",
+      "bytes": 81692,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/massoterapia-hero.jpg",
+      "sha256": "40f2c22acf1f402ef3ceeacc3a0883a291b0eda4190eee62c0057b52eacdc8ad",
+      "bytes": 38744,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/massoterapia-servicos.jpg",
+      "sha256": "f0e073a652e7f6926c44582a228643635e4ffc6f8e7523fb25450e11b9d5a9f0",
+      "bytes": 269726,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/massoterapia-sobre.jpg",
+      "sha256": "b397cfc97eac01a71762c534396f84c617ab09db2eab5fec6f5017d28a7afb10",
+      "bytes": 197380,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/gallery/sources.json",
+      "sha256": "de23929269c571701184fd23dfb9869ec89289ad9a3b2450350e8430b7e75f29",
+      "bytes": 4004,
+      "text": true,
+      "lines": 89
+    },
+    {
+      "path": "public/projects/genius.jpg",
+      "sha256": "dee66715a0290497e5cfb8ec93623ec35fc3c3092a263644af8d9d6c3ad26602",
+      "bytes": 33901,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/jbl-desk.jpg",
+      "sha256": "9a12cb4c609109c61dc190835256c5424049c13714719ba080d09e52e4883e9b",
+      "bytes": 157367,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/massoterapia.jpg",
+      "sha256": "d03de0f78eb51ffc99a8f4677d904cdfd953ed8db27b3934f7ff4822455314bc",
+      "bytes": 54505,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/bikcraft-480.webp",
+      "sha256": "3c5d6ce03881106e5ec5671faf758d7b198422daec84991311360335bde4e405",
+      "bytes": 18314,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/bikcraft-960.webp",
+      "sha256": "a47be60355e8c598bb8c2ab3081719af448a67ec9593609dac936423dfe77396",
+      "bytes": 50854,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/enderecador-480.webp",
+      "sha256": "1de53d2d90ba3a58f2703d36af52f310a8181c81b04e12c209ec9e4b11f67a40",
+      "bytes": 12922,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/enderecador-960.webp",
+      "sha256": "25204161af7ce741573b8731140945a378e743d49cac8f9c2b25aa92a4099202",
+      "bytes": 37430,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/genius-480.webp",
+      "sha256": "21b3ae606fdefe0af8400939148e17c9a37ea6282ea52c037fb9abfed0c57885",
+      "bytes": 4720,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/genius-960.webp",
+      "sha256": "4a9add744894c351c4711f613d15370aba2f2735ab39febf8ebd8d05a3e7b562",
+      "bytes": 12444,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/jbl-desk-480.webp",
+      "sha256": "e25ccf7e6360743e64abf924b903e147a9d6997f158deded04f6a275d65abcbb",
+      "bytes": 18388,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/jbl-desk-960.webp",
+      "sha256": "b7d6b7051b59ef25d96efb05091b9d2cf745a53d7aa108ef67312a46e0b43586",
+      "bytes": 43428,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/massoterapia-480.webp",
+      "sha256": "eaddcd849f69a7d8bae7496f43f831cdccc9c0addead6bc11ce7d2295c07c295",
+      "bytes": 9826,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/projects/previews/massoterapia-960.webp",
+      "sha256": "14a805df9baa999eefefead1f6805f8ef3faa44d28273cc4d0e375810c50b470",
+      "bytes": 22962,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/publications/dashboards-excel.jpg",
+      "sha256": "bbe91303b6f89dceef685be123ed11e33d74aeb21234473b98f8a871aea16c60",
+      "bytes": 72728,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/publications/ia-cultura-digital.jpg",
+      "sha256": "7415b06b91f1090ab12eb116be0afee9df77254e924265bf794c75bd47d827d9",
+      "bytes": 55715,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/publications/javascript-power-apps.jpg",
+      "sha256": "381491b1171725e31506afa0ad318348d71d13109075efc2805967eaa9603ea3",
+      "bytes": 31891,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/publications/reconhecimento-inovacao.jpg",
+      "sha256": "845879badb7b7380f1aa7b0016df5a396ba9416ba841f59ad9123b054e573e01",
+      "bytes": 33665,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/publications/scrum-cultura-corporativa.png",
+      "sha256": "9b878645de99b2c03adf66f29f5b77a72e18af702c835beec7351eef8163fbd3",
+      "bytes": 310104,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/publications/sources.json",
+      "sha256": "3b869b4f74ace906ce2f8d11a66cff1f4000d5ae501b76322987563242b2bfd7",
+      "bytes": 1368,
+      "text": true,
+      "lines": 33
+    },
+    {
+      "path": "public/robots.txt",
+      "sha256": "d0660f6a82afd075c71693b21dbfc0037ea2c88670254e666967243f086a8b32",
+      "bytes": 90,
+      "text": true,
+      "lines": 5
+    },
+    {
+      "path": "public/sitemap.xml",
+      "sha256": "d8797931f7417630b9138228c42de152dc59d9d31593d738ea982bff017111b5",
+      "bytes": 180,
+      "text": true,
+      "lines": 5
+    },
+    {
+      "path": "public/social/portfolio-og.jpg",
+      "sha256": "041ca7400663d26e1e9e30ffe83baa207f58473cb2588390ef7a73f1c571b7ff",
+      "bytes": 73768,
+      "text": false,
+      "lines": null
+    },
+    {
+      "path": "public/vite.svg",
+      "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb",
+      "bytes": 1497,
+      "text": true,
+      "lines": 1
+    },
+    {
+      "path": "scripts/verify-accessibility.mjs",
+      "sha256": "689945041751048876a2914dc15357009e915041020506d64227000fc975fa67",
+      "bytes": 10571,
+      "text": true,
+      "lines": 114
+    },
+    {
+      "path": "scripts/verify-seo.mjs",
+      "sha256": "65414d319df1d01e94b0db733edd9c759c301ffaffda4ad5e41e553ef394b5a3",
+      "bytes": 2671,
+      "text": true,
+      "lines": 37
+    },
+    {
+      "path": "src/App.css",
+      "sha256": "1b75716b5511ad178574cd3e3656e5e8dd94544456944b4ff1d253c9ecc614d4",
+      "bytes": 648,
+      "text": true,
+      "lines": 43
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "92f99c91818d41ff145dcc67c61a6c6fb98505e653068d9d7f2a9cf89c616756",
+      "bytes": 713,
+      "text": true,
+      "lines": 14
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "sha256": "6b1fb0ce7762a774d38e660e13f2fa76fb77d0a68108fa4b051624cf5d4ac0f5",
+      "bytes": 790,
+      "text": true,
+      "lines": 11
+    },
+    {
+      "path": "src/components/HeroComet.tsx",
+      "sha256": "e5954dc0ce0d31e82aa5528f0ffc121f6efbb6fd8fb8450e37667981087bb3cb",
+      "bytes": 6583,
+      "text": true,
+      "lines": 125
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "sha256": "60c6d7a896fffc14eb04ce9b1a4e5354900bf8f8ac65b2fd33cf2d532c8d2019",
+      "bytes": 2709,
+      "text": true,
+      "lines": 59
+    },
+    {
+      "path": "src/components/ProjectCover.tsx",
+      "sha256": "618c3fffbd7c6d6de6e9b02c6e4e6fe0f15216cd63bf36deccf91ca4df78b3fd",
+      "bytes": 1209,
+      "text": true,
+      "lines": 15
+    },
+    {
+      "path": "src/components/ProjectGallery.tsx",
+      "sha256": "0768d11b08aff55ef6588175335e80b86b94610a87b2c24f114bea95bd087b85",
+      "bytes": 3562,
+      "text": true,
+      "lines": 45
+    },
+    {
+      "path": "src/components/ProjectModal.tsx",
+      "sha256": "f3e2000e7abbffce023c4df0cddcfd25495a99d4faca60f108acf82ca4e766f4",
+      "bytes": 3771,
+      "text": true,
+      "lines": 59
+    },
+    {
+      "path": "src/components/Reveal.tsx",
+      "sha256": "ccdc7dd658aea6df69ce5559d700775480f2d577662eeb641391936a94714227",
+      "bytes": 236,
+      "text": true,
+      "lines": 10
+    },
+    {
+      "path": "src/components/SiteProcessModal.tsx",
+      "sha256": "57904150e13dff3b6025cc1c73d5c4f95e6f214917503616f1d7f9d6e8b04f5c",
+      "bytes": 5456,
+      "text": true,
+      "lines": 67
+    },
+    {
+      "path": "src/components/ThemeToggle.tsx",
+      "sha256": "150953dc15b74403879c29fd8d1b2147d00ff2797f9036e17586ad4bc9c2eaee",
+      "bytes": 1626,
+      "text": true,
+      "lines": 27
+    },
+    {
+      "path": "src/components/dialogKeyboard.ts",
+      "sha256": "6e3bc3e68d5f6df4196cbee1067754e5f9f3baaded7adfb99e6fa7999fb369f5",
+      "bytes": 944,
+      "text": true,
+      "lines": 15
+    },
+    {
+      "path": "src/data/portfolio.ts",
+      "sha256": "fa43367437cadc9b201febca6b440f1873e52740460158881bc3bfbfe1140700",
+      "bytes": 13979,
+      "text": true,
+      "lines": 131
+    },
+    {
+      "path": "src/data/projectGallery.ts",
+      "sha256": "7a03b7714b6842e57d2218665cdc25322af6355af32dad85d7f8a701e068a0e1",
+      "bytes": 4433,
+      "text": true,
+      "lines": 50
+    },
+    {
+      "path": "src/data/siteProcess.ts",
+      "sha256": "bda33e6d98a78f41645ab3f8fc2df937548245e770c6ad237ea87b6c13db8fef",
+      "bytes": 3915,
+      "text": true,
+      "lines": 70
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "c8df131233b726b326b034df67652f002d4b60e132578b83445edc626eb1084c",
+      "bytes": 28908,
+      "text": true,
+      "lines": 300
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "484f93f3048565a86a47e308f5a12ee27aa12f5291f3b52a4bb5dc03d887dbc7",
+      "bytes": 240,
+      "text": true,
+      "lines": 11
+    },
+    {
+      "path": "src/project-showcase.css",
+      "sha256": "a7a7f2699f9e10808fdd0df615d0c106ac8948d770d9b1e8ce9a5380fd4338eb",
+      "bytes": 13745,
+      "text": true,
+      "lines": 148
+    },
+    {
+      "path": "src/sections/About.tsx",
+      "sha256": "24a01e4bcde7a05e2e5b2963383d376ea4333b2ed6d9412779ee1dd1439d7d27",
+      "bytes": 1602,
+      "text": true,
+      "lines": 10
+    },
+    {
+      "path": "src/sections/Approach.tsx",
+      "sha256": "27d7b0e4b4222c05a016e67178ebbf2e28b119326545de6eefeddcaa91ad3ec2",
+      "bytes": 1321,
+      "text": true,
+      "lines": 10
+    },
+    {
+      "path": "src/sections/Contact.tsx",
+      "sha256": "845e3196cb70aae08233dcdf5c68a361980116662ec7352d0ac8e1bf818f6753",
+      "bytes": 2624,
+      "text": true,
+      "lines": 26
+    },
+    {
+      "path": "src/sections/FeaturedProject.tsx",
+      "sha256": "c46a03413457d1e312f59986b48c7046649524a2d5ae48a3592028bca8af25b4",
+      "bytes": 7180,
+      "text": true,
+      "lines": 60
+    },
+    {
+      "path": "src/sections/Hero.tsx",
+      "sha256": "1ba78537b4fab38a167a447b4379a3cdbf90abddff90cc6d0f134329fc80e341",
+      "bytes": 3093,
+      "text": true,
+      "lines": 38
+    },
+    {
+      "path": "src/sections/ProjectShowcase.tsx",
+      "sha256": "2a2f7039f227624f591fec1f847fd46e9e1db61937e8c6c87da70bd3480d1bec",
+      "bytes": 6280,
+      "text": true,
+      "lines": 70
+    },
+    {
+      "path": "src/sections/Projects.tsx",
+      "sha256": "e304423566b612cfd698f0d7000ba05afed2cfc40fbd5a0dd95a58b311fb858d",
+      "bytes": 4533,
+      "text": true,
+      "lines": 25
+    },
+    {
+      "path": "src/sections/Trajectory.tsx",
+      "sha256": "70d18c0113db9c40c8d4ae459eb227353018c7e22834eb11b4aeac03cde234ea",
+      "bytes": 3669,
+      "text": true,
+      "lines": 19
+    },
+    {
+      "path": "src/site-process.css",
+      "sha256": "e1897d23b9a9e99cacca86775699dc7533f816ebbedb86e3ad5a0a2d021a8d50",
+      "bytes": 3725,
+      "text": true,
+      "lines": 46
+    },
+    {
+      "path": "tailwind.config.js",
+      "sha256": "34ed918087ae3ddf9cf9144044595e5943abfe0797f3f880ffaf60753ac48038",
+      "bytes": 592,
+      "text": true,
+      "lines": 28
+    },
+    {
+      "path": "tsconfig.app.json",
+      "sha256": "185c585aa92b2cbe0df1918e999d9a6bc4fec6762a6d80de7d2d155d56369aed",
+      "bytes": 760,
+      "text": true,
+      "lines": 29
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52",
+      "bytes": 126,
+      "text": true,
+      "lines": 8
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "a6d49d645590cac21c235a0548605d867321b2e1750e99176d2153d702dfa842",
+      "bytes": 679,
+      "text": true,
+      "lines": 27
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "5cabb639b6b62e19064337abc9f5b4fda0f83e50a47396ca9a3bba388abfdd13",
+      "bytes": 168,
+      "text": true,
+      "lines": 8
+    }
+  ],
+  "candidates": [],
+  "bundles": [
+    "dist/assets/index-C7slHcQK.js"
+  ],
+  "note": "Detecção por padrões não prova ausência de segredos; histórico local de todas as refs disponíveis. Valores candidatos sempre mascarados. Binários históricos não decodificados como texto."
+}

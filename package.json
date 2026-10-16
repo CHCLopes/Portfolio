@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:seo": "node scripts/verify-seo.mjs",
+    "check:a11y": "node scripts/verify-accessibility.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.23.25",
