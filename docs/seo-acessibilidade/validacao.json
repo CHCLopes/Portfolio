@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-16",
+  "target": "Build local em http://127.0.0.1:4173/",
+  "publication": "Ainda não publicado",
+  "axe_version": "4.14.0",
+  "browser": "155.0.4283.45",
+  "axe_summary": {
+    "states": 28,
+    "violations": 0,
+    "layouts": 15,
+    "layoutFailures": 0,
+    "consoleErrors": 0
+  },
+  "layouts": [
+    {
+      "width": 320,
+      "theme": "light",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 375,
+      "theme": "light",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 375,
+      "theme": "dark",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 412,
+      "theme": "light",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 412,
+      "theme": "dark",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 1280,
+      "theme": "light",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 1280,
+      "theme": "dark",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 1920,
+      "theme": "light",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 1920,
+      "theme": "dark",
+      "overflow": false,
+      "brokenVisibleImages": []
+    },
+    {
+      "width": 1280,
+      "zoom": "reflow equivalente a 200% por viewport",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "textSpacing": true,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "textSpacing": true,
+      "overflow": false
+    }
+  ],
+  "functional_checks": [
+    "Skip link leva o foco ao conteúdo principal.",
+    "Pausa mantém a posição dos cometas; retomar reinicia o movimento.",
+    "Carrossel horizontal: setas, Home e End operantes.",
+    "Galeria JBL Desk: setas, Home, End e apenas slide ativo exposto à árvore de acessibilidade.",
+    "Oito modais: abertura por teclado, foco contido e retorno ao acionador após Escape.",
+    "Menu mobile: Escape devolve foco; navegação fecha o menu e foca o título de destino.",
+    "prefers-reduced-motion: cometas imóveis e controle de movimento oculto.",
+    "Modo de cores forçadas inspecionado com controles e foco identificáveis."
+  ],
+  "manual_review_required": [
+    "color-contrast"
+  ],
+  "lighthouse": {
+    "mobile": {
+      "lighthouse_version": "12.8.2",
+      "fetch_time": "2026-10-16T10:06:46.257Z",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 2889.2923499999997,
+      "tbt_ms": 85,
+      "cls": 0,
+      "form_factor": "mobile"
+    },
+    "desktop": {
+      "lighthouse_version": "12.8.2",
+      "fetch_time": "2026-10-16T10:07:11.491Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp_ms": 593.4274,
+      "tbt_ms": 7.5,
+      "cls": 0,
+      "form_factor": "desktop"
+    }
+  },
+  "limitations": [
+    "Medições de laboratório não representam dados de campo ou ranking no Google.",
+    "Não houve avaliação com NVDA ou TalkBack em aparelhos reais.",
+    "Contrastes dos tokens e imagens de interface foram revisados; regras automáticas incompletas não equivalem a conformidade total.",
+    "Efeito dos redirecionamentos e cabeçalhos precisa de confirmação após deploy na Netlify."
+  ]
+}

@@ -5,8 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/manrope-extralight.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/manrope-extralight.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" as="image" type="image/webp" href="/hero/agent-layers-1280.webp" imagesrcset="/hero/agent-layers-640.webp 640w, /hero/agent-layers-1280.webp 1280w" imagesizes="(max-width: 799px) 248px, (max-width: 1100px) 44vw, 558px" fetchpriority="high" />
     <meta name="theme-color" content="#f7f8f2" />
     <script>
       (() => {
@@ -17,15 +18,85 @@
         document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#0b2226' : '#f7f8f2';
       })();
     </script>
-    <meta name="description" content="Carlos Lopes: desenvolvimento front-end, Power Platform e processos. Conheça projetos reais que conectam visão operacional, dados e experiência do usuário." />
+    <link rel="canonical" href="https://portfoliocarloslopes.netlify.app/" />
+    <meta name="author" content="Carlos Henrique Lopes" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="description" content="Gestão de equipes e processos, front-end com React e Power Apps. Conheça os projetos e a trajetória de Carlos Henrique Lopes em soluções digitais." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:title" content="Carlos Lopes | Desenvolvimento com visão de operação" />
-    <meta property="og:description" content="Interfaces úteis e ferramentas para a rotina real. Projetos em React, TypeScript e experiência em Power Platform, dados e processos." />
-    <title>Carlos Lopes | Front-end, Power Platform e Processos</title>
+    <meta property="og:site_name" content="Carlos Henrique Lopes | Portfólio" />
+    <meta property="og:url" content="https://portfoliocarloslopes.netlify.app/" />
+    <meta property="og:title" content="Carlos Henrique Lopes | Desenvolvimento & Gestão" />
+    <meta property="og:description" content="Gestão de equipes e processos, front-end com React e Power Apps. Conheça os projetos e a trajetória de Carlos Henrique Lopes em soluções digitais." />
+    <meta property="og:image" content="https://portfoliocarloslopes.netlify.app/social/portfolio-og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Carlos Henrique Lopes: Desenvolvimento e Gestão. Da operação à interface, com ilustração de camadas interligadas." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Carlos Henrique Lopes | Desenvolvimento & Gestão" />
+    <meta name="twitter:description" content="Gestão de equipes e processos, front-end com React e Power Apps. Conheça os projetos e a trajetória de Carlos Henrique Lopes em soluções digitais." />
+    <meta name="twitter:image" content="https://portfoliocarloslopes.netlify.app/social/portfolio-og.jpg" />
+    <meta name="twitter:image:alt" content="Carlos Henrique Lopes: Desenvolvimento e Gestão. Da operação à interface." />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://portfoliocarloslopes.netlify.app/#website",
+      "url": "https://portfoliocarloslopes.netlify.app/",
+      "name": "Carlos Henrique Lopes | Portfólio",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://portfoliocarloslopes.netlify.app/#person"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://portfoliocarloslopes.netlify.app/#profile",
+      "url": "https://portfoliocarloslopes.netlify.app/",
+      "name": "Carlos Henrique Lopes | Desenvolvimento & Gestão",
+      "description": "Gestão de equipes e processos, front-end com React e Power Apps. Conheça os projetos e a trajetória de Carlos Henrique Lopes em soluções digitais.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://portfoliocarloslopes.netlify.app/#website"
+      },
+      "mainEntity": {
+        "@id": "https://portfoliocarloslopes.netlify.app/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://portfoliocarloslopes.netlify.app/#person",
+      "name": "Carlos Henrique Lopes",
+      "alternateName": "Carlos Lopes",
+      "url": "https://portfoliocarloslopes.netlify.app/",
+      "image": "https://portfoliocarloslopes.netlify.app/profile.jpg",
+      "description": "Profissional de desenvolvimento e gestão, com experiência em equipes, processos, dados, React e Power Apps.",
+      "sameAs": [
+        "https://github.com/CHCLopes",
+        "https://www.linkedin.com/in/carlos-lopes-b445aa201/"
+      ],
+      "knowsAbout": [
+        "Gestão de equipes",
+        "Gestão de processos",
+        "Desenvolvimento front-end",
+        "React",
+        "Power Apps",
+        "UX/UI",
+        "Dados com Excel",
+        "Desenvolvimento assistido por IA"
+      ]
+    }
+  ]
+}
+    </script>
+    <title>Carlos Henrique Lopes | Desenvolvimento & Gestão</title>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>Para explorar os projetos interativos, ative o JavaScript. Você também pode conhecer o trabalho de Carlos Henrique Lopes no <a href="https://github.com/CHCLopes">GitHub</a> ou entrar em contato pelo <a href="https://www.linkedin.com/in/carlos-lopes-b445aa201/">LinkedIn</a>.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

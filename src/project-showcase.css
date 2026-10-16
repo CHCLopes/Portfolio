@@ -84,7 +84,7 @@
 .gallery-slide figcaption{padding:12px 2px 4px;margin:0;border:0;font-size:12px;line-height:1.6;color:var(--muted);flex-shrink:0}
 .gallery-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px}
 .gallery-controls>span{font-size:12px;color:var(--green);font-variant-numeric:tabular-nums}
-.gallery-zoom.text-link{font-size:13px;gap:4px;min-height:30px}
+.gallery-zoom.text-link{font-size:13px;gap:4px;min-height:44px}
 .gallery-fullsize.text-link{font-size:13px;min-height:36px;margin-top:8px}
 .project-cover{aspect-ratio:16/10;width:100%;background:var(--wash);color:var(--ink);border-radius:16px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
 .cover-eyebrow{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--green)}
@@ -123,6 +123,9 @@
  .modal-text .case-chapter h3{font-size:28px}.modal-text .case-chapter{padding-block:20px 26px}
  .modal-editorial{width:100%}.modal-editorial .project-cover{max-width:420px;margin-inline:auto}
 
+}
+@media(max-width:599px){
+ .showcase-heading.section-heading{flex-direction:column;align-items:stretch}
 }
 @media(max-width:390px){
  .showcase-heading h2{font-size:36px}

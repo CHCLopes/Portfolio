@@ -7,3 +7,5 @@ As licenças SIL Open Font License 1.1 estão nos arquivos manrope-OFL.txt e dm-
 Origem: https://fonts.google.com/
 
 As famílias não foram renomeadas ou modificadas.
+
+A versão manrope-extralight.woff2 foi comprimida sem alteração dos glifos a partir da fonte TTF local em 16/10/2026, com fontTools/Brotli. A fonte original e a licença foram preservadas.

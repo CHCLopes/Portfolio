@@ -1,0 +1,1433 @@
+[
+  {
+    "file": ".gitignore",
+    "lines": 34,
+    "sha256": "fb49ec069c5f274597d2088093fd0268bfc1bcbdc33101263cb511ec648a9672",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "DESIGN_SYSTEM.md",
+    "lines": 171,
+    "sha256": "f842b49370f9e39ec9fcf757eb70476dea9591067a956e78ba7c675f4c0b35a8",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "README.md",
+    "lines": 202,
+    "sha256": "16bab6de42767e5f0b53ba8dffbf46de4a22b6b298cad6c03ee3b359f106cfbc",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "eslint.config.js",
+    "lines": 24,
+    "sha256": "74bcb49fec61d75ef30542fbfe41f2498961f72a028a827c2091622b06d6921e",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "index.html",
+    "lines": 103,
+    "sha256": "fc2a22df2c15c124542321408bac3f4d4a0dbb05061bf3851b3739c028be4952",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "netlify.toml",
+    "lines": 35,
+    "sha256": "dc0763ce9797689ca43ccb9426164285cca29a3b9a11d1ee9203101c76b550b8",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "package-lock.json",
+    "lines": 4181,
+    "sha256": "d8c61f898883c6d2eb112344510bd206c1393718463190b3eac87daef76c77ff",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "package.json",
+    "lines": 39,
+    "sha256": "ba903fe40ff1808d596b14f36f9d3ffa95540e1e1e427318d52ca03af6ed450e",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "postcss.config.js",
+    "lines": 6,
+    "sha256": "b554e0e63770163ec5e5023f0cdbe7b13acbce9ae1665225667a358cf84ea89c",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/404.html",
+    "lines": 3,
+    "sha256": "c9e95cc4d53a23a020fe2beccbe843f3d824c50dec7d30758527a3b3283dd344",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "public/favicon.svg",
+    "lines": 2,
+    "sha256": "382124697e7dddd58cafaf682238e3510525e53ca577945353539a22852e2492",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/fonts/README.md",
+    "lines": 12,
+    "sha256": "b6a41f9873eb435af81f4bca94d4b8c78f47478c04d89de6153fb32904b25c31",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/fonts/dm-sans-OFL.txt",
+    "lines": 94,
+    "sha256": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/fonts/manrope-OFL.txt",
+    "lines": 94,
+    "sha256": "4b8929f05a122b7abb9059501dc7dc4df86f8c97d5a1769d60d82cf2d2795dde",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/projects/gallery/sources.json",
+    "lines": 89,
+    "sha256": "de23929269c571701184fd23dfb9869ec89289ad9a3b2450350e8430b7e75f29",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/publications/sources.json",
+    "lines": 33,
+    "sha256": "3b869b4f74ace906ce2f8d11a66cff1f4000d5ae501b76322987563242b2bfd7",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/robots.txt",
+    "lines": 5,
+    "sha256": "d0660f6a82afd075c71693b21dbfc0037ea2c88670254e666967243f086a8b32",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/sitemap.xml",
+    "lines": 5,
+    "sha256": "d8797931f7417630b9138228c42de152dc59d9d31593d738ea982bff017111b5",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "public/vite.svg",
+    "lines": 1,
+    "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "scripts/verify-accessibility.mjs",
+    "lines": 114,
+    "sha256": "689945041751048876a2914dc15357009e915041020506d64227000fc975fa67",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "scripts/verify-seo.mjs",
+    "lines": 37,
+    "sha256": "65414d319df1d01e94b0db733edd9c759c301ffaffda4ad5e41e553ef394b5a3",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "src/App.css",
+    "lines": 43,
+    "sha256": "1b75716b5511ad178574cd3e3656e5e8dd94544456944b4ff1d253c9ecc614d4",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "src/App.tsx",
+    "lines": 14,
+    "sha256": "92f99c91818d41ff145dcc67c61a6c6fb98505e653068d9d7f2a9cf89c616756",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/Footer.tsx",
+    "lines": 11,
+    "sha256": "6b1fb0ce7762a774d38e660e13f2fa76fb77d0a68108fa4b051624cf5d4ac0f5",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/HeroComet.tsx",
+    "lines": 125,
+    "sha256": "e5954dc0ce0d31e82aa5528f0ffc121f6efbb6fd8fb8450e37667981087bb3cb",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/Navbar.tsx",
+    "lines": 59,
+    "sha256": "60c6d7a896fffc14eb04ce9b1a4e5354900bf8f8ac65b2fd33cf2d532c8d2019",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/ProjectCover.tsx",
+    "lines": 15,
+    "sha256": "618c3fffbd7c6d6de6e9b02c6e4e6fe0f15216cd63bf36deccf91ca4df78b3fd",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/ProjectGallery.tsx",
+    "lines": 45,
+    "sha256": "0768d11b08aff55ef6588175335e80b86b94610a87b2c24f114bea95bd087b85",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/ProjectModal.tsx",
+    "lines": 59,
+    "sha256": "f3e2000e7abbffce023c4df0cddcfd25495a99d4faca60f108acf82ca4e766f4",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/Reveal.tsx",
+    "lines": 10,
+    "sha256": "ccdc7dd658aea6df69ce5559d700775480f2d577662eeb641391936a94714227",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/SiteProcessModal.tsx",
+    "lines": 67,
+    "sha256": "57904150e13dff3b6025cc1c73d5c4f95e6f214917503616f1d7f9d6e8b04f5c",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/ThemeToggle.tsx",
+    "lines": 27,
+    "sha256": "150953dc15b74403879c29fd8d1b2147d00ff2797f9036e17586ad4bc9c2eaee",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/components/dialogKeyboard.ts",
+    "lines": 15,
+    "sha256": "6e3bc3e68d5f6df4196cbee1067754e5f9f3baaded7adfb99e6fa7999fb369f5",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/data/portfolio.ts",
+    "lines": 131,
+    "sha256": "fa43367437cadc9b201febca6b440f1873e52740460158881bc3bfbfe1140700",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/data/projectGallery.ts",
+    "lines": 50,
+    "sha256": "7a03b7714b6842e57d2218665cdc25322af6355af32dad85d7f8a701e068a0e1",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/data/siteProcess.ts",
+    "lines": 70,
+    "sha256": "bda33e6d98a78f41645ab3f8fc2df937548245e770c6ad237ea87b6c13db8fef",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/index.css",
+    "lines": 300,
+    "sha256": "c8df131233b726b326b034df67652f002d4b60e132578b83445edc626eb1084c",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "src/main.tsx",
+    "lines": 11,
+    "sha256": "484f93f3048565a86a47e308f5a12ee27aa12f5291f3b52a4bb5dc03d887dbc7",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/project-showcase.css",
+    "lines": 148,
+    "sha256": "a7a7f2699f9e10808fdd0df615d0c106ac8948d770d9b1e8ce9a5380fd4338eb",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "src/sections/About.tsx",
+    "lines": 10,
+    "sha256": "24a01e4bcde7a05e2e5b2963383d376ea4333b2ed6d9412779ee1dd1439d7d27",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/sections/Approach.tsx",
+    "lines": 10,
+    "sha256": "27d7b0e4b4222c05a016e67178ebbf2e28b119326545de6eefeddcaa91ad3ec2",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/sections/Contact.tsx",
+    "lines": 26,
+    "sha256": "845e3196cb70aae08233dcdf5c68a361980116662ec7352d0ac8e1bf818f6753",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/sections/FeaturedProject.tsx",
+    "lines": 60,
+    "sha256": "c46a03413457d1e312f59986b48c7046649524a2d5ae48a3592028bca8af25b4",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/sections/Hero.tsx",
+    "lines": 38,
+    "sha256": "1ba78537b4fab38a167a447b4379a3cdbf90abddff90cc6d0f134329fc80e341",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/sections/ProjectShowcase.tsx",
+    "lines": 70,
+    "sha256": "2a2f7039f227624f591fec1f847fd46e9e1db61937e8c6c87da70bd3480d1bec",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/sections/Projects.tsx",
+    "lines": 25,
+    "sha256": "e304423566b612cfd698f0d7000ba05afed2cfc40fbd5a0dd95a58b311fb858d",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/sections/Trajectory.tsx",
+    "lines": 19,
+    "sha256": "70d18c0113db9c40c8d4ae459eb227353018c7e22834eb11b4aeac03cde234ea",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "protegido",
+        "reason": "Dados locais, JSX e atributos restritos; sem entrada externa direcionada a sink HTML."
+      }
+    }
+  },
+  {
+    "file": "src/site-process.css",
+    "lines": 46,
+    "sha256": "e1897d23b9a9e99cacca86775699dc7533f816ebbedb86e3ad5a0a2d021a8d50",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "tailwind.config.js",
+    "lines": 28,
+    "sha256": "34ed918087ae3ddf9cf9144044595e5943abfe0797f3f880ffaf60753ac48038",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "tsconfig.app.json",
+    "lines": 29,
+    "sha256": "185c585aa92b2cbe0df1918e999d9a6bc4fec6762a6d80de7d2d155d56369aed",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "tsconfig.json",
+    "lines": 8,
+    "sha256": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "tsconfig.node.json",
+    "lines": 27,
+    "sha256": "a6d49d645590cac21c235a0548605d867321b2e1750e99176d2153d702dfa842",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  },
+  {
+    "file": "vite.config.ts",
+    "lines": 8,
+    "sha256": "5cabb639b6b62e19064337abc9f5b4fda0f83e50a47396ca9a3bba388abfdd13",
+    "categories": {
+      "isolamento": {
+        "status": "não aplicável",
+        "reason": "Aplicação pública, sem banco, tenant ou dados privados por proprietário."
+      },
+      "autorizacao": {
+        "status": "não aplicável",
+        "reason": "Sem operações privilegiadas, papéis autenticados ou handlers de aplicação."
+      },
+      "idor": {
+        "status": "não aplicável",
+        "reason": "Sem endpoints de acesso a objetos privados; IDs identificam conteúdo público local."
+      },
+      "segredos": {
+        "status": "verificado",
+        "reason": "Varredura por padrões sem candidatos; validade de credenciais não foi testada."
+      },
+      "xss": {
+        "status": "não aplicável",
+        "reason": "Arquivo de configuração, estilo ou documentação sem fluxo de renderização de entrada externa."
+      }
+    }
+  }
+]

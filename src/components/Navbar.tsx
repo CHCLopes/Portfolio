@@ -13,6 +13,13 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
 
+  function navigate(href: string) {
+    setOpen(false);
+    // Closing the mobile menu must not leave keyboard focus on a hidden link.
+    // Run after the native anchor navigation, which would otherwise reset this focus.
+    requestAnimationFrame(() => document.querySelector<HTMLElement>(href)?.querySelector<HTMLElement>('h1, h2')?.focus({ preventScroll: true }));
+  }
+
   useEffect(() => {
     const closeWithEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && open) {
@@ -33,7 +40,7 @@ export function Navbar() {
   return (
     <header className="site-header">
       <div className="shell nav-inner">
-        <a className="brand" href="#home" aria-label="Carlos Lopes, início" onClick={() => setOpen(false)}>
+        <a className="brand" href="#home" title="Ir para o início" onClick={() => navigate('#home')}>
           <span className="brand-mark" aria-hidden="true">cl<span>.</span></span>
           <span>Carlos Lopes<span className="brand-caption">Desenvolvimento & Gestão</span></span>
         </a>
@@ -41,8 +48,8 @@ export function Navbar() {
           {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
         </button>
         <nav id="primary-navigation" className={open ? 'navigation is-open' : 'navigation'} aria-label="Navegação principal">
-          {links.map(link => <a key={link.href} href={link.href} onClick={() => setOpen(false)}>{link.label}</a>)}
-          <a className="nav-contact" href="#contact" onClick={() => setOpen(false)}>Vamos conversar <ArrowUpRight size={16} aria-hidden="true" /></a>
+          {links.map(link => <a key={link.href} href={link.href} onClick={() => navigate(link.href)}>{link.label}</a>)}
+          <a className="nav-contact" href="#contact" onClick={() => navigate('#contact')}>Vamos conversar <ArrowUpRight size={16} aria-hidden="true" /></a>
         </nav>
         <ThemeToggle />
       </div>

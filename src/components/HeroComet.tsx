@@ -5,11 +5,18 @@ const PERIOD = 32;
 const TRAIL_SECONDS = 7.6;
 const TAU = Math.PI * 2;
 
-export function HeroComet() {
+export function HeroComet({ paused = false }: { paused?: boolean }) {
   const gradientId = 'comet-corona-' + useId().replace(/:/g, '');
   const svgRefs = useRef<(SVGSVGElement | null)[]>([]);
   const headRefs = useRef<(SVGGElement | null)[][]>([[], []]);
   const trailRefs = useRef<(SVGPathElement | null)[][]>([[], []]);
+  const pausedRef = useRef(paused);
+  const syncPlaybackRef = useRef<(() => void) | null>(null);
+
+  useEffect(() => {
+    pausedRef.current = paused;
+    syncPlaybackRef.current?.();
+  }, [paused]);
 
   useEffect(() => {
     const svg = svgRefs.current[0];
@@ -20,7 +27,10 @@ export function HeroComet() {
     let frame = 0;
     let elapsed = 0;
     let lastTime: number | null = null;
+    let lastPaint: number | null = null;
     let inView = false;
+    const headLayers = [-1, -1];
+    const trailLayers = Array.from({ length: 2 }, () => Array<number>(SEGMENTS).fill(-1));
 
     const position = (seconds: number, comet: number) => {
       const angle = (.22 + seconds / PERIOD) * TAU + comet * Math.PI;
@@ -40,17 +50,19 @@ export function HeroComet() {
         for (let layer = 0; layer < 2; layer++) {
           const head = headRefs.current[layer][comet];
           head?.setAttribute('transform', `translate(${leading.x.toFixed(2)} ${leading.y.toFixed(2)})`);
-          head?.setAttribute('visibility', layer === leading.layer ? 'visible' : 'hidden');
+          if (headLayers[comet] !== leading.layer) head?.setAttribute('visibility', layer === leading.layer ? 'visible' : 'hidden');
         }
+        headLayers[comet] = leading.layer;
         for (let index = 0; index < SEGMENTS; index++) {
           const age = TRAIL_SECONDS * (index + 1) / SEGMENTS;
           const trailing = position(seconds - age, comet);
           const midpoint = position(seconds - age + TRAIL_SECONDS / SEGMENTS / 2, comet);
           for (let layer = 0; layer < 2; layer++) {
             const segment = trailRefs.current[layer][comet * SEGMENTS + index];
-            segment?.setAttribute('visibility', layer === midpoint.layer ? 'visible' : 'hidden');
+            if (trailLayers[comet][index] !== midpoint.layer) segment?.setAttribute('visibility', layer === midpoint.layer ? 'visible' : 'hidden');
             if (layer === midpoint.layer) segment?.setAttribute('d', `M${leading.x.toFixed(2)} ${leading.y.toFixed(2)} L${trailing.x.toFixed(2)} ${trailing.y.toFixed(2)}`);
           }
+          trailLayers[comet][index] = midpoint.layer;
           leading = trailing;
         }
       }
@@ -58,14 +70,17 @@ export function HeroComet() {
     const tick = (now: number) => {
       if (lastTime !== null) elapsed += Math.min((now - lastTime) / 1000, .05);
       lastTime = now;
-      paint(elapsed);
+      // The slow orbit stays smooth at 30 fps without rewriting hidden layers each frame.
+      if (lastPaint === null || now - lastPaint >= 1000 / 30 - 1) { paint(elapsed); lastPaint = now; }
       frame = requestAnimationFrame(tick);
     };
     const syncPlayback = () => {
       cancelAnimationFrame(frame);
       lastTime = null;
-      if (inView && !document.hidden && !reducedMotion.matches) frame = requestAnimationFrame(tick);
+      lastPaint = null;
+      if (inView && !document.hidden && !reducedMotion.matches && !pausedRef.current) frame = requestAnimationFrame(tick);
     };
+    syncPlaybackRef.current = syncPlayback;
     const resizeHeads = () => {
       const scale = svg.getBoundingClientRect().width / 1200;
       if (!scale) return;
@@ -88,6 +103,7 @@ export function HeroComet() {
     document.addEventListener('visibilitychange', syncPlayback);
     return () => {
       cancelAnimationFrame(frame);
+      syncPlaybackRef.current = null;
       visibility.disconnect();
       resize.disconnect();
       reducedMotion.removeEventListener('change', syncPlayback);

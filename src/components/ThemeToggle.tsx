@@ -22,5 +22,5 @@ export function ThemeToggle() {
     const next = theme === 'dark' ? 'light' : 'dark'; setPreference(next);
     try { localStorage.setItem('carlos-portfolio-theme', next); } catch { /* The switch still works without persistent storage. */ }
   }
-  return <button type="button" className="theme-toggle" onClick={toggleTheme} aria-label="Modo escuro" aria-pressed={theme === 'dark'} title={theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro'}>{theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}<span>{theme === 'dark' ? 'Claro' : 'Escuro'}</span></button>;
+  return <button type="button" className="theme-toggle" onClick={toggleTheme} aria-label={theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro'} title={theme === 'dark' ? 'Ativar modo claro' : 'Ativar modo escuro'}>{theme === 'dark' ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}<span>{theme === 'dark' ? 'Claro' : 'Escuro'}</span></button>;
 }

@@ -1,0 +1,11 @@
+{
+  "pages": 11,
+  "rendered_pages": 11,
+  "mandatory_sections": "OK",
+  "coverage_rows": 53,
+  "findings": 0,
+  "source_line_references": "conferidas na árvore de trabalho",
+  "pdf_bytes": 63502,
+  "sha256": "b2887fca7db5e8da75911d58cb7be5a1a00f96b24f78b079f9e42342d23171a6",
+  "visual_review": "11 páginas rasterizadas e inspecionadas; gráficos, tabelas, código e paginação legíveis, sem cortes ou sobreposições observados."
+}
